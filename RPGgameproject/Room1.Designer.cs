@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbroom1 = new System.Windows.Forms.PictureBox();
+            this.pbcharacter = new System.Windows.Forms.PictureBox();
             this.gbstatistics = new System.Windows.Forms.GroupBox();
             this.lblhealthnum = new System.Windows.Forms.Label();
             this.lblhealthstatistic = new System.Windows.Forms.Label();
@@ -50,18 +50,20 @@
             this.lblresults = new System.Windows.Forms.Label();
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblsearchoption1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbroom1)).BeginInit();
+            this.pbroomone = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
             this.gbstatistics.SuspendLayout();
             this.gbactions.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomone)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbroom1
+            // pbcharacter
             // 
-            this.pbroom1.Location = new System.Drawing.Point(12, 12);
-            this.pbroom1.Name = "pbroom1";
-            this.pbroom1.Size = new System.Drawing.Size(219, 208);
-            this.pbroom1.TabIndex = 0;
-            this.pbroom1.TabStop = false;
+            this.pbcharacter.Location = new System.Drawing.Point(12, 12);
+            this.pbcharacter.Name = "pbcharacter";
+            this.pbcharacter.Size = new System.Drawing.Size(219, 208);
+            this.pbcharacter.TabIndex = 0;
+            this.pbcharacter.TabStop = false;
             // 
             // gbstatistics
             // 
@@ -278,25 +280,34 @@
             this.lblsearchoption1.Text = "1. Search around the door.";
             this.lblsearchoption1.Click += new System.EventHandler(this.lblsearchoption1_Click);
             // 
+            // pbroomone
+            // 
+            this.pbroomone.Location = new System.Drawing.Point(257, 12);
+            this.pbroomone.Name = "pbroomone";
+            this.pbroomone.Size = new System.Drawing.Size(522, 208);
+            this.pbroomone.TabIndex = 19;
+            this.pbroomone.TabStop = false;
+            // 
             // Room1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pbroomone);
             this.Controls.Add(this.lblsearchoption1);
             this.Controls.Add(this.lblsearchoption2);
             this.Controls.Add(this.lblresults);
             this.Controls.Add(this.gbactions);
             this.Controls.Add(this.gbstatistics);
-            this.Controls.Add(this.pbroom1);
+            this.Controls.Add(this.pbcharacter);
             this.Name = "Room1";
             this.Text = "Room1";
-            this.Load += new System.EventHandler(this.Room1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbroom1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).EndInit();
             this.gbstatistics.ResumeLayout(false);
             this.gbstatistics.PerformLayout();
             this.gbactions.ResumeLayout(false);
             this.gbactions.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomone)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,7 +315,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbroom1;
+        private System.Windows.Forms.PictureBox pbcharacter;
         private System.Windows.Forms.GroupBox gbstatistics;
         private System.Windows.Forms.Label lblhealthnum;
         private System.Windows.Forms.Label lblhealthstatistic;
@@ -326,5 +337,6 @@
         private System.Windows.Forms.Label lblresults;
         private System.Windows.Forms.Label lblsearchoption2;
         private System.Windows.Forms.Label lblsearchoption1;
+        private System.Windows.Forms.PictureBox pbroomone;
     }
 }

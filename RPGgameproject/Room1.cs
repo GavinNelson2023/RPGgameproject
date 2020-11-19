@@ -21,7 +21,7 @@ namespace RPGgameproject
             info = c;
         }
 
-        private void Room1_Load(object sender, EventArgs e)
+        private void Room1_Load(object sender, EventArgs e, Character picture)
         {
             lblstrnum.Text = "" + info.stregth;
             lblmpnum.Text = "" + info.magic;
@@ -29,18 +29,23 @@ namespace RPGgameproject
             lblwisnum.Text = "" + info.wisdom;
             lbllucknum.Text = "" + info.luck;
             lblhealthnum.Text = "" + info.health;
+            pbcharacter.Image = info.picture;
             lblresults.Text = "";
             lblsearchoption1.Text = "";
             lblsearchoption2.Text = "";
-
+            if(info.health == 10)
+            {
+                lblact4.Text = "";
+            }
+            pbroomone.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void lblact1_Click(object sender, EventArgs e)
         {
             if (key == false)
             {
-                string message = "You try to open the door but it is still locked. You have a feeling the key is nearby.";
-                MessageBox.Show(message);
+                lblresults.Text = "You try to open the door but it is still locked. You have a feeling the key is nearby.";
             }
             else
             {
@@ -61,28 +66,34 @@ namespace RPGgameproject
                     if(info.luck >= 3 && key == false)
                     {
                         lblresults.Text = "You swing your sword and decapitate the enemy. You find a key on it's body.";
-                        key = true;
                         lblact3.Text = "";
                         lblact2.Text = "";
+                        key = true;
+                        attacked = true;
                     }
                     else if(info.luck >= 3 && key == true)
                     {
                         lblresults.Text = "You swing your sword and decapitate the enemy.";
                         lblact2.Text = "";
                         lblact3.Text = "";
+                        attacked = true;
                     }
                 }
                 else
                 {
                     lblresults.Text = "You swing your sword at the enemy but you missed and hit yourself. The enemy ran away while you were distracted.";
-                    info.health = info.health - 1;
+                    info.health = info.health - 2;
+                    lblhealthnum.Text = "" + info.health;
                     lblact2.Text = "";
+                    lblact4.Text = "4. Heal";
+                    attacked = true;
                 }
             }
             else
             {
-                lblresults.Text = "You attacked the enemy but missed and then enemy ran away.";
+                lblresults.Text = "You attacked the enemy but missed and then the enemy ran away.";
                 lblact2.Text = "";
+                attacked = true;
             }
         }
 
@@ -100,11 +111,22 @@ namespace RPGgameproject
 
         private void lblact4_Click(object sender, EventArgs e)
         {
-
+            if(info.health == 10)
+            {
+                lblresults.Text = "You are already at full health. Please select another option.";
+            }
+            else if(info.health == 9 || info.health == 8)
+            {
+                info.health = 10;
+                lblresults.Text = "You heal to max health";
+                lblhealthnum.Text = "" + info.health;
+                lblact4.Text = "";
+            }
         }
 
         public bool key;
-        public bool searched;
+        public bool attacked;
+        
 
         private void lblsearchoption1_Click(object sender, EventArgs e)
         {
@@ -112,17 +134,31 @@ namespace RPGgameproject
             {
                 lblresults.Text = "While you where walking to the door you ended up triping and falling on top of a key. You have aquired a key!";
                 key = true;
-                searched = true;
                 lblsearchoption1.Text = "";
                 lblsearchoption2.Text = "";
                 lblact1.Text = "1. Open Door";
-                lblact2.Text = "2. Attack Enemy";
-                lblact4.Text = "4. Heal";
+                if(attacked == true)
+                {
+                    lblact2.Text = "";
+                }
+                else
+                {
+                    lblact2.Text = "2. Attack Enemy";
+                }
+                if (info.health == 10)
+                {
+                    lblact4.Text = "";
+                }
+                else
+                {
+                    lblact4.Text = "4. Heal";
+                }
+
+                
             }
             else
             {
                 lblresults.Text = "You searched around the door but found nothing.";
-                searched = true;
                 lblsearchoption1.Text = "";
             }
             
@@ -138,8 +174,22 @@ namespace RPGgameproject
                 lblsearchoption1.Text = "";
                 lblsearchoption2.Text = "";
                 lblact1.Text = "1. Open Door";
-                lblact2.Text = "2. Attack Enemy";
-                lblact4.Text = "4. Heal";
+                if (attacked == true)
+                {
+                    lblact2.Text = "";
+                }
+                else
+                {
+                    lblact2.Text = "2. Attack Enemy";
+                }
+                if (info.health == 10)
+                {
+                    lblact4.Text = "";
+                }
+                else
+                {
+                    lblact4.Text = "4. Heal";
+                }
             }
             else
             {
@@ -147,8 +197,23 @@ namespace RPGgameproject
                 lblsearchoption1.Text = "";
                 lblsearchoption2.Text = "";
                 lblact1.Text = "1. Open Door";
-                lblact2.Text = "2. Attack Enemy";
-                lblact4.Text = "4. Heal";
+                if (attacked == true)
+                {
+                    lblact2.Text = "";
+                }
+                else
+                {
+                    lblact2.Text = "2. Attack Enemy";
+                }
+                if (info.health == 10)
+                {
+                    lblact4.Text = "";
+                }
+                else
+                {
+                    lblact4.Text = "4. Heal";
+                }
+                key = true;
             }
         }
     }
