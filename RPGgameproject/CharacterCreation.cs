@@ -19,10 +19,11 @@ namespace RPGgameproject
         int dex;
         int health = 10;
         
+
         string name;
         string picture;
 
-        Character n;
+        Character n = new Character();
         public CharacterCreation()
         {
             InitializeComponent();
@@ -83,7 +84,7 @@ namespace RPGgameproject
         }
         private void btnconfirm_Click(object sender, EventArgs e)
         {
-            if(str != 0 && mp != 0 && dex != 0 && wis != 0 && luck != 0 && cbchracterpic.Text != "")
+            if(str != 0 && mp != 0 && dex != 0 && wis != 0 && luck != 0 && cbchracterpic.Text != "" && txtname.Text != "")
             {
                 n.stregth = str;
                 n.dexterity = dex;
@@ -92,7 +93,7 @@ namespace RPGgameproject
                 n.luck = luck;
                 n.health = 10;
                 n.name = txtname.Text;
-                //n.picture = pbcharacter.Image;
+                n.picture = pbcharacter.Image;
 
 
                 Room1 go = new Room1(n);
@@ -101,7 +102,7 @@ namespace RPGgameproject
             }
             else
             {
-                string message = "";
+                string message = "Please finish entering all required information";
                 MessageBox.Show(message);
                 
             }
@@ -126,21 +127,10 @@ namespace RPGgameproject
             {
                 pbcharacter.Image = Properties.Resources.Bear_Tank;
             }
-
+            
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
-        private void txtname_TextChanged(object sender, EventArgs e)
-        {
-            if (txtname.Text == "")
-            {
-               
-            }
-            else
-            {
-
-            }
-        }
-       
+        
     }
 }

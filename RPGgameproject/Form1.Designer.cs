@@ -46,14 +46,16 @@
             // 
             // lbltitle
             // 
-            this.lbltitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbltitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbltitle.AutoSize = true;
             this.lbltitle.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.Location = new System.Drawing.Point(256, 72);
+            this.lbltitle.Location = new System.Drawing.Point(176, 82);
             this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(269, 42);
+            this.lbltitle.Size = new System.Drawing.Size(461, 42);
             this.lbltitle.TabIndex = 1;
-            this.lbltitle.Text = "Title place holder";
+            this.lbltitle.Text = "Overused Dungeon Rpg game";
             this.lbltitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1

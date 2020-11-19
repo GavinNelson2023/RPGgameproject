@@ -42,8 +42,8 @@
             this.cbwisdom = new System.Windows.Forms.ComboBox();
             this.btnconfirm = new System.Windows.Forms.Button();
             this.gbstatistics = new System.Windows.Forms.GroupBox();
-            this.lblchrarctername = new System.Windows.Forms.Label();
-            this.lblnamestatistic = new System.Windows.Forms.Label();
+            this.lblhealthnum = new System.Windows.Forms.Label();
+            this.lblhealthstatistic = new System.Windows.Forms.Label();
             this.lbllucknum = new System.Windows.Forms.Label();
             this.lblwisnum = new System.Windows.Forms.Label();
             this.lbldexnum = new System.Windows.Forms.Label();
@@ -227,8 +227,8 @@
             // 
             // gbstatistics
             // 
-            this.gbstatistics.Controls.Add(this.lblchrarctername);
-            this.gbstatistics.Controls.Add(this.lblnamestatistic);
+            this.gbstatistics.Controls.Add(this.lblhealthnum);
+            this.gbstatistics.Controls.Add(this.lblhealthstatistic);
             this.gbstatistics.Controls.Add(this.lbllucknum);
             this.gbstatistics.Controls.Add(this.lblwisnum);
             this.gbstatistics.Controls.Add(this.lbldexnum);
@@ -242,33 +242,33 @@
             this.gbstatistics.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbstatistics.Location = new System.Drawing.Point(43, 221);
             this.gbstatistics.Name = "gbstatistics";
-            this.gbstatistics.Size = new System.Drawing.Size(303, 217);
+            this.gbstatistics.Size = new System.Drawing.Size(303, 230);
             this.gbstatistics.TabIndex = 13;
             this.gbstatistics.TabStop = false;
             this.gbstatistics.Text = "Character Statistics:";
             // 
-            // lblchrarctername
+            // lblhealthnum
             // 
-            this.lblchrarctername.AutoSize = true;
-            this.lblchrarctername.Location = new System.Drawing.Point(117, 35);
-            this.lblchrarctername.Name = "lblchrarctername";
-            this.lblchrarctername.Size = new System.Drawing.Size(64, 27);
-            this.lblchrarctername.TabIndex = 11;
-            this.lblchrarctername.Text = "name";
+            this.lblhealthnum.AutoSize = true;
+            this.lblhealthnum.Location = new System.Drawing.Point(124, 175);
+            this.lblhealthnum.Name = "lblhealthnum";
+            this.lblhealthnum.Size = new System.Drawing.Size(36, 27);
+            this.lblhealthnum.TabIndex = 13;
+            this.lblhealthnum.Text = "10";
             // 
-            // lblnamestatistic
+            // lblhealthstatistic
             // 
-            this.lblnamestatistic.AutoSize = true;
-            this.lblnamestatistic.Location = new System.Drawing.Point(9, 35);
-            this.lblnamestatistic.Name = "lblnamestatistic";
-            this.lblnamestatistic.Size = new System.Drawing.Size(75, 27);
-            this.lblnamestatistic.TabIndex = 10;
-            this.lblnamestatistic.Text = "Name:";
+            this.lblhealthstatistic.AutoSize = true;
+            this.lblhealthstatistic.Location = new System.Drawing.Point(13, 175);
+            this.lblhealthstatistic.Name = "lblhealthstatistic";
+            this.lblhealthstatistic.Size = new System.Drawing.Size(82, 27);
+            this.lblhealthstatistic.TabIndex = 12;
+            this.lblhealthstatistic.Text = "Health:";
             // 
             // lbllucknum
             // 
             this.lbllucknum.AutoSize = true;
-            this.lbllucknum.Location = new System.Drawing.Point(136, 170);
+            this.lbllucknum.Location = new System.Drawing.Point(136, 148);
             this.lbllucknum.Name = "lbllucknum";
             this.lbllucknum.Size = new System.Drawing.Size(24, 27);
             this.lbllucknum.TabIndex = 9;
@@ -277,7 +277,7 @@
             // lblwisnum
             // 
             this.lblwisnum.AutoSize = true;
-            this.lblwisnum.Location = new System.Drawing.Point(136, 143);
+            this.lblwisnum.Location = new System.Drawing.Point(136, 121);
             this.lblwisnum.Name = "lblwisnum";
             this.lblwisnum.Size = new System.Drawing.Size(24, 27);
             this.lblwisnum.TabIndex = 8;
@@ -286,7 +286,7 @@
             // lbldexnum
             // 
             this.lbldexnum.AutoSize = true;
-            this.lbldexnum.Location = new System.Drawing.Point(136, 116);
+            this.lbldexnum.Location = new System.Drawing.Point(136, 94);
             this.lbldexnum.Name = "lbldexnum";
             this.lbldexnum.Size = new System.Drawing.Size(24, 27);
             this.lbldexnum.TabIndex = 7;
@@ -295,7 +295,7 @@
             // lblmpnum
             // 
             this.lblmpnum.AutoSize = true;
-            this.lblmpnum.Location = new System.Drawing.Point(136, 89);
+            this.lblmpnum.Location = new System.Drawing.Point(136, 62);
             this.lblmpnum.Name = "lblmpnum";
             this.lblmpnum.Size = new System.Drawing.Size(24, 27);
             this.lblmpnum.TabIndex = 6;
@@ -304,7 +304,7 @@
             // lblstrnum
             // 
             this.lblstrnum.AutoSize = true;
-            this.lblstrnum.Location = new System.Drawing.Point(136, 62);
+            this.lblstrnum.Location = new System.Drawing.Point(136, 35);
             this.lblstrnum.Name = "lblstrnum";
             this.lblstrnum.Size = new System.Drawing.Size(24, 27);
             this.lblstrnum.TabIndex = 5;
@@ -313,7 +313,7 @@
             // lblluckstatistic
             // 
             this.lblluckstatistic.AutoSize = true;
-            this.lblluckstatistic.Location = new System.Drawing.Point(9, 170);
+            this.lblluckstatistic.Location = new System.Drawing.Point(10, 148);
             this.lblluckstatistic.Name = "lblluckstatistic";
             this.lblluckstatistic.Size = new System.Drawing.Size(68, 27);
             this.lblluckstatistic.TabIndex = 4;
@@ -322,7 +322,7 @@
             // lblwisstatistic
             // 
             this.lblwisstatistic.AutoSize = true;
-            this.lblwisstatistic.Location = new System.Drawing.Point(6, 143);
+            this.lblwisstatistic.Location = new System.Drawing.Point(10, 121);
             this.lblwisstatistic.Name = "lblwisstatistic";
             this.lblwisstatistic.Size = new System.Drawing.Size(55, 27);
             this.lblwisstatistic.TabIndex = 3;
@@ -331,7 +331,7 @@
             // lbldexstatistic
             // 
             this.lbldexstatistic.AutoSize = true;
-            this.lbldexstatistic.Location = new System.Drawing.Point(7, 116);
+            this.lbldexstatistic.Location = new System.Drawing.Point(10, 94);
             this.lbldexstatistic.Name = "lbldexstatistic";
             this.lbldexstatistic.Size = new System.Drawing.Size(58, 27);
             this.lbldexstatistic.TabIndex = 2;
@@ -340,7 +340,7 @@
             // lblmpstatistic
             // 
             this.lblmpstatistic.AutoSize = true;
-            this.lblmpstatistic.Location = new System.Drawing.Point(10, 89);
+            this.lblmpstatistic.Location = new System.Drawing.Point(10, 62);
             this.lblmpstatistic.Name = "lblmpstatistic";
             this.lblmpstatistic.Size = new System.Drawing.Size(51, 27);
             this.lblmpstatistic.TabIndex = 1;
@@ -349,7 +349,7 @@
             // lblstrstatistic
             // 
             this.lblstrstatistic.AutoSize = true;
-            this.lblstrstatistic.Location = new System.Drawing.Point(7, 62);
+            this.lblstrstatistic.Location = new System.Drawing.Point(10, 35);
             this.lblstrstatistic.Name = "lblstrstatistic";
             this.lblstrstatistic.Size = new System.Drawing.Size(45, 27);
             this.lblstrstatistic.TabIndex = 0;
@@ -372,7 +372,6 @@
             this.txtname.Name = "txtname";
             this.txtname.Size = new System.Drawing.Size(352, 32);
             this.txtname.TabIndex = 14;
-            this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 
             // lbllooks
             // 
@@ -392,7 +391,6 @@
             this.Controls.Add(this.lbllooks);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.lblname);
-            this.Controls.Add(this.gbstatistics);
             this.Controls.Add(this.btnconfirm);
             this.Controls.Add(this.cbwisdom);
             this.Controls.Add(this.cbluck);
@@ -406,6 +404,7 @@
             this.Controls.Add(this.cbchracterpic);
             this.Controls.Add(this.cbstrength);
             this.Controls.Add(this.pbcharacter);
+            this.Controls.Add(this.gbstatistics);
             this.Name = "CharacterCreation";
             this.Text = "CharacterCreation";
             this.Load += new System.EventHandler(this.CharacterCreation_Load);
@@ -443,10 +442,10 @@
         private System.Windows.Forms.Label lbldexnum;
         private System.Windows.Forms.Label lblmpnum;
         private System.Windows.Forms.Label lblstrnum;
-        private System.Windows.Forms.Label lblchrarctername;
-        private System.Windows.Forms.Label lblnamestatistic;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.Label lbllooks;
+        private System.Windows.Forms.Label lblhealthnum;
+        private System.Windows.Forms.Label lblhealthstatistic;
     }
 }

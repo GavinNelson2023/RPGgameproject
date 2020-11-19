@@ -67,6 +67,12 @@
     <Compile Include="Room1.Designer.cs">
       <DependentUpon>Room1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Room2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room2.Designer.cs">
+      <DependentUpon>Room2.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CharacterCreation.resx">
       <DependentUpon>CharacterCreation.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +92,9 @@
     <EmbeddedResource Include="Room1.resx">
       <DependentUpon>Room1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Room2.resx">
+      <DependentUpon>Room2.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,9 +109,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\download.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Alien Dog.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Wizard Alligator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\download.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
