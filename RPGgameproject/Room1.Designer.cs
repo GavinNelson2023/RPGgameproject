@@ -302,6 +302,7 @@
             this.Controls.Add(this.pbcharacter);
             this.Name = "Room1";
             this.Text = "Room1";
+            this.Load += new System.EventHandler(this.Room1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).EndInit();
             this.gbstatistics.ResumeLayout(false);
             this.gbstatistics.PerformLayout();

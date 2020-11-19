@@ -21,7 +21,7 @@ namespace RPGgameproject
             info = c;
         }
 
-        private void Room1_Load(object sender, EventArgs e, Character picture)
+        private void Room1_Load_1(object sender, EventArgs e)
         {
             lblstrnum.Text = "" + info.stregth;
             lblmpnum.Text = "" + info.magic;
@@ -33,13 +33,14 @@ namespace RPGgameproject
             lblresults.Text = "";
             lblsearchoption1.Text = "";
             lblsearchoption2.Text = "";
-            if(info.health == 10)
+            if (info.health == 10)
             {
                 lblact4.Text = "";
             }
             pbroomone.SizeMode = PictureBoxSizeMode.StretchImage;
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
+       
 
         private void lblact1_Click(object sender, EventArgs e)
         {
@@ -133,11 +134,11 @@ namespace RPGgameproject
             if(info.luck == 5)
             {
                 lblresults.Text = "While you where walking to the door you ended up triping and falling on top of a key. You have aquired a key!";
-                key = true;
                 lblsearchoption1.Text = "";
                 lblsearchoption2.Text = "";
                 lblact1.Text = "1. Open Door";
-                if(attacked == true)
+                key = true;
+                if (attacked == true)
                 {
                     lblact2.Text = "";
                 }
@@ -216,5 +217,7 @@ namespace RPGgameproject
                 key = true;
             }
         }
+
+        
     }
 }
