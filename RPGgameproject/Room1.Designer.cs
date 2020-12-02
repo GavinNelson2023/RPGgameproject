@@ -282,6 +282,7 @@
             // 
             // pbroomone
             // 
+            this.pbroomone.Image = global::RPGgameproject.Properties.Resources.dungeon_room_1;
             this.pbroomone.Location = new System.Drawing.Point(257, 12);
             this.pbroomone.Name = "pbroomone";
             this.pbroomone.Size = new System.Drawing.Size(522, 208);

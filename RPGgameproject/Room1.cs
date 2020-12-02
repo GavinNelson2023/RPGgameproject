@@ -66,7 +66,7 @@ namespace RPGgameproject
                     
                     if(info.luck >= 3 && key == false)
                     {
-                        lblresults.Text = "You swing your sword and decapitate the enemy. You find a key on it's body.";
+                        lblresults.Text = "You swing your sword and crush the skull of the skeleton. You find a key inside it's pulverized skull.";
                         lblact3.Text = "";
                         lblact2.Text = "";
                         key = true;
@@ -74,7 +74,7 @@ namespace RPGgameproject
                     }
                     else if(info.luck >= 3 && key == true)
                     {
-                        lblresults.Text = "You swing your sword and decapitate the enemy.";
+                        lblresults.Text = "You swing your sword and crush the skull of the skeleton.";
                         lblact2.Text = "";
                         lblact3.Text = "";
                         attacked = true;
@@ -82,7 +82,7 @@ namespace RPGgameproject
                 }
                 else
                 {
-                    lblresults.Text = "You swing your sword at the enemy but you missed and hit yourself. The enemy ran away while you were distracted.";
+                    lblresults.Text = "You swing your sword at the skeleton but you somehow get your sword stuck in it's ribcage. The skeleton glares at you obviously annoyed. Then the skeleton quikly stabs you and just as fast it removes the sword from it's ribcage and leaves the room through the door on the other side of the room.";
                     info.health = info.health - 2;
                     lblhealthnum.Text = "" + info.health;
                     lblact2.Text = "";
@@ -92,7 +92,7 @@ namespace RPGgameproject
             }
             else
             {
-                lblresults.Text = "You attacked the enemy but missed and then the enemy ran away.";
+                lblresults.Text = "You attacked the skeleton but missed and then the skeleton rscapes through the door on the other side of the room.";
                 lblact2.Text = "";
                 attacked = true;
             }
