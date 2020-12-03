@@ -13,7 +13,6 @@ namespace RPGgameproject
     public partial class Room1 : Form
     {
         Character info;
-        Character d = new Character();
         Random rng = new Random();
         public Room1(Character c)
         {
@@ -50,7 +49,7 @@ namespace RPGgameproject
             }
             else
             {
-                Room2 go = new Room2(d);
+                Room2 go = new Room2(info);
                 go.Show();
                 this.Hide();
             }

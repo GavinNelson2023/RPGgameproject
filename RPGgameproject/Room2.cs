@@ -13,7 +13,6 @@ namespace RPGgameproject
     public partial class Room2 : Form
     {
         Character info;
-        Character b = new Character();
         Random rng = new Random();
         public Room2(Character c)
         {
@@ -38,8 +37,22 @@ namespace RPGgameproject
             {
                 lblact4.Text = "";
             }
-            pbroomone.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbroomtwo.SizeMode = PictureBoxSizeMode.StretchImage;
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+        public bool key = false;
+        private void lblact1_Click(object sender, EventArgs e)
+        {
+            if (key == false)
+            {
+                lblresults.Text = "You try to open the door but it is still locked. You have a feeling the key is nearby.";
+            }
+            else
+            {
+                Room2 go = new Room2(info);
+                go.Show();
+                this.Hide();
+            }
         }
     }
 }

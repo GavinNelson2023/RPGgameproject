@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbroomone = new System.Windows.Forms.PictureBox();
+            this.pbroomtwo = new System.Windows.Forms.PictureBox();
             this.lblsearchoption1 = new System.Windows.Forms.Label();
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblresults = new System.Windows.Forms.Label();
@@ -51,19 +51,19 @@
             this.lblmpstatistic = new System.Windows.Forms.Label();
             this.lblstrstatistic = new System.Windows.Forms.Label();
             this.pbcharacter = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomtwo)).BeginInit();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbroomone
+            // pbroomtwo
             // 
-            this.pbroomone.Location = new System.Drawing.Point(249, 12);
-            this.pbroomone.Name = "pbroomone";
-            this.pbroomone.Size = new System.Drawing.Size(522, 208);
-            this.pbroomone.TabIndex = 26;
-            this.pbroomone.TabStop = false;
+            this.pbroomtwo.Location = new System.Drawing.Point(249, 12);
+            this.pbroomtwo.Name = "pbroomtwo";
+            this.pbroomtwo.Size = new System.Drawing.Size(522, 208);
+            this.pbroomtwo.TabIndex = 26;
+            this.pbroomtwo.TabStop = false;
             // 
             // lblsearchoption1
             // 
@@ -143,6 +143,7 @@
             this.lblact1.Size = new System.Drawing.Size(114, 21);
             this.lblact1.TabIndex = 0;
             this.lblact1.Text = "1. Open Door";
+            this.lblact1.Click += new System.EventHandler(this.lblact1_Click);
             // 
             // gbstatistics
             // 
@@ -287,7 +288,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbroomone);
+            this.Controls.Add(this.pbroomtwo);
             this.Controls.Add(this.lblsearchoption1);
             this.Controls.Add(this.lblsearchoption2);
             this.Controls.Add(this.lblresults);
@@ -297,7 +298,7 @@
             this.Name = "Room2";
             this.Text = "Room2";
             this.Load += new System.EventHandler(this.Room2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomtwo)).EndInit();
             this.gbactions.ResumeLayout(false);
             this.gbactions.PerformLayout();
             this.gbstatistics.ResumeLayout(false);
@@ -310,7 +311,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbroomone;
+        private System.Windows.Forms.PictureBox pbroomtwo;
         private System.Windows.Forms.Label lblsearchoption1;
         private System.Windows.Forms.Label lblsearchoption2;
         private System.Windows.Forms.Label lblresults;
