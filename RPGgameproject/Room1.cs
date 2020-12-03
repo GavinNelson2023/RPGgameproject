@@ -82,7 +82,7 @@ namespace RPGgameproject
                 }
                 else
                 {
-                    lblresults.Text = "You swing your sword at the skeleton but you somehow get your sword stuck in it's ribcage. The skeleton glares at you obviously annoyed. Then the skeleton quikly stabs you and just as fast it removes the sword from it's ribcage and leaves the room through the door on the other side of the room.";
+                    lblresults.Text = "You swing your sword at the skeleton but you somehow get your sword stuck in it's ribcage. The skeleton looks very annoyed. Then the skeleton quickly stabs you and at the same time it removes the sword from it's ribcage and leaves the room.";
                     info.health = info.health - 2;
                     lblhealthnum.Text = "" + info.health;
                     lblact2.Text = "";
@@ -92,7 +92,7 @@ namespace RPGgameproject
             }
             else
             {
-                lblresults.Text = "You attacked the skeleton but missed and then the skeleton rscapes through the door on the other side of the room.";
+                lblresults.Text = "You attacked the skeleton but missed and then the skeleton escapes through the door on the other side of the room.";
                 lblact2.Text = "";
                 attacked = true;
             }

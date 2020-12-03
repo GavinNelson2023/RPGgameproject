@@ -251,7 +251,7 @@
             // 
             // lblresults
             // 
-            this.lblresults.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblresults.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblresults.Location = new System.Drawing.Point(237, 245);
             this.lblresults.Name = "lblresults";
             this.lblresults.Size = new System.Drawing.Size(551, 90);

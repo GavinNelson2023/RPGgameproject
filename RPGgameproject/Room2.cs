@@ -12,14 +12,34 @@ namespace RPGgameproject
 {
     public partial class Room2 : Form
     {
+        Character info;
+        Character b = new Character();
+        Random rng = new Random();
         public Room2(Character c)
         {
             InitializeComponent();
+            info = c;
         }
+
 
         private void Room2_Load(object sender, EventArgs e)
         {
-
+            lblstrnum.Text = "" + info.stregth;
+            lblmpnum.Text = "" + info.magic;
+            lbldexnum.Text = "" + info.dexterity;
+            lblwisnum.Text = "" + info.wisdom;
+            lbllucknum.Text = "" + info.luck;
+            lblhealthnum.Text = "" + info.health;
+            pbcharacter.Image = info.picture;
+            lblresults.Text = "";
+            lblsearchoption1.Text = "";
+            lblsearchoption2.Text = "";
+            if (info.health == 10)
+            {
+                lblact4.Text = "";
+            }
+            pbroomone.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }
