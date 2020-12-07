@@ -95,6 +95,7 @@ namespace RPGgameproject
                 lblact2.Text = "";
                 attacked = true;
             }
+            pbroomone.Image = Properties.Resources.Dungoen_room_1_without_enemy;
         }
 
         private void lblact3_Click(object sender, EventArgs e)

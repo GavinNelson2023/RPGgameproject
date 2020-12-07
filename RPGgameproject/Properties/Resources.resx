@@ -121,11 +121,14 @@
   <data name="Wizard Alligator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wizard Alligator.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Alien Dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alien Dog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Bear Tank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bear Tank.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dungeon room 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dungeon room 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alien Dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alien Dog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Soldier Dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Soldier Dog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,7 +136,7 @@
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dungeon room 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dungeon room 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dungoen room 1 without enemy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dungoen room 1 without enemy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

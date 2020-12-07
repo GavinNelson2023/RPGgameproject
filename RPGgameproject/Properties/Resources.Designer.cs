@@ -103,6 +103,16 @@ namespace RPGgameproject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dungoen_room_1_without_enemy {
+            get {
+                object obj = ResourceManager.GetObject("Dungoen room 1 without enemy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soldier_Dog {
             get {
                 object obj = ResourceManager.GetObject("Soldier Dog", resourceCulture);

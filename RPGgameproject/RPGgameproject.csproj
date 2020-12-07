@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\download.jpg" />
+    <None Include="Resources\Dungoen room 1 without enemy.png" />
     <None Include="Resources\dungeon room 1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
