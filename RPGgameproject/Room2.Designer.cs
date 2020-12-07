@@ -71,9 +71,10 @@
             this.lblsearchoption1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsearchoption1.Location = new System.Drawing.Point(229, 281);
             this.lblsearchoption1.Name = "lblsearchoption1";
-            this.lblsearchoption1.Size = new System.Drawing.Size(227, 23);
+            this.lblsearchoption1.Size = new System.Drawing.Size(125, 23);
             this.lblsearchoption1.TabIndex = 25;
-            this.lblsearchoption1.Text = "1. Search around the door.";
+            this.lblsearchoption1.Text = "1. Good news";
+            this.lblsearchoption1.Click += new System.EventHandler(this.lblsearchoption1_Click);
             // 
             // lblsearchoption2
             // 
@@ -81,9 +82,10 @@
             this.lblsearchoption2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsearchoption2.Location = new System.Drawing.Point(467, 281);
             this.lblsearchoption2.Name = "lblsearchoption2";
-            this.lblsearchoption2.Size = new System.Drawing.Size(330, 23);
+            this.lblsearchoption2.Size = new System.Drawing.Size(111, 23);
             this.lblsearchoption2.TabIndex = 24;
-            this.lblsearchoption2.Text = "2. Search around the edge of the room.";
+            this.lblsearchoption2.Text = "2. Bad news";
+            this.lblsearchoption2.Click += new System.EventHandler(this.lblsearchoption2_Click);
             // 
             // lblresults
             // 
@@ -116,6 +118,7 @@
             this.lblact4.Size = new System.Drawing.Size(62, 21);
             this.lblact4.TabIndex = 3;
             this.lblact4.Text = "4. Heal";
+            this.lblact4.Click += new System.EventHandler(this.lblact4_Click);
             // 
             // lblact3
             // 
@@ -125,15 +128,17 @@
             this.lblact3.Size = new System.Drawing.Size(132, 21);
             this.lblact3.TabIndex = 2;
             this.lblact3.Text = "3. Search Room";
+            this.lblact3.Click += new System.EventHandler(this.lblact3_Click);
             // 
             // lblact2
             // 
             this.lblact2.AutoSize = true;
             this.lblact2.Location = new System.Drawing.Point(190, 29);
             this.lblact2.Name = "lblact2";
-            this.lblact2.Size = new System.Drawing.Size(133, 21);
+            this.lblact2.Size = new System.Drawing.Size(124, 21);
             this.lblact2.TabIndex = 1;
-            this.lblact2.Text = "2. Attack Enemy";
+            this.lblact2.Text = "2. Disarm traps";
+            this.lblact2.Click += new System.EventHandler(this.lblact2_Click);
             // 
             // lblact1
             // 

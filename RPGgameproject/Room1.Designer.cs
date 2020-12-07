@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbcharacter = new System.Windows.Forms.PictureBox();
             this.gbstatistics = new System.Windows.Forms.GroupBox();
             this.lblhealthnum = new System.Windows.Forms.Label();
             this.lblhealthstatistic = new System.Windows.Forms.Label();
@@ -51,19 +50,12 @@
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblsearchoption1 = new System.Windows.Forms.Label();
             this.pbroomone = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
+            this.pbcharacter = new System.Windows.Forms.PictureBox();
             this.gbstatistics.SuspendLayout();
             this.gbactions.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbroomone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbcharacter
-            // 
-            this.pbcharacter.Location = new System.Drawing.Point(12, 12);
-            this.pbcharacter.Name = "pbcharacter";
-            this.pbcharacter.Size = new System.Drawing.Size(219, 208);
-            this.pbcharacter.TabIndex = 0;
-            this.pbcharacter.TabStop = false;
             // 
             // gbstatistics
             // 
@@ -289,6 +281,14 @@
             this.pbroomone.TabIndex = 19;
             this.pbroomone.TabStop = false;
             // 
+            // pbcharacter
+            // 
+            this.pbcharacter.Location = new System.Drawing.Point(12, 12);
+            this.pbcharacter.Name = "pbcharacter";
+            this.pbcharacter.Size = new System.Drawing.Size(219, 208);
+            this.pbcharacter.TabIndex = 0;
+            this.pbcharacter.TabStop = false;
+            // 
             // Room1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,12 +304,12 @@
             this.Name = "Room1";
             this.Text = "Room1";
             this.Load += new System.EventHandler(this.Room1_Load_1);
-            ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).EndInit();
             this.gbstatistics.ResumeLayout(false);
             this.gbstatistics.PerformLayout();
             this.gbactions.ResumeLayout(false);
             this.gbactions.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbroomone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
