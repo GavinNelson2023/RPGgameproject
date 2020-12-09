@@ -43,8 +43,6 @@ namespace RPGgameproject
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         public bool traps = true;
-        public bool goodnews = false;
-        public bool badnews = false;
         private void lblact1_Click(object sender, EventArgs e)
         {
             if (traps == true)
@@ -53,7 +51,7 @@ namespace RPGgameproject
             }
             else
             {
-                Room2 go = new Room2(info);
+                Room3 go = new Room3(info);
                 go.Show();
                 this.Hide();
             }
@@ -65,7 +63,6 @@ namespace RPGgameproject
             if(info.wisdom >= 3)
             {
                 int rngnum = rng.Next(0, 6);
-                rngnum = 5;
                 if(rngnum == 1)
                 {
                     lblresults.Text = "With your ultra large brain you somehow disarm all the traps in the room perfectly. When you finish disarming the last trap you hear a click from the direction of the door.";
@@ -75,23 +72,29 @@ namespace RPGgameproject
                 }
                 else if(rngnum == 2)
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You try and disarm the traps using magic but you end up setting off some of them. When you finish disarming the last trap you hear a click from the direction of the door.";
                     lblact2.Text = "";
                     lblact3.Text = "";
+                    info.health = 5;
+                    lblhealthnum.Text = "5";
                     traps = false;
                 }
                 else if(rngnum == 3)
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You end up setting all the traps off at once but you some how survive. You hear a click from the direction of the door.";
                     lblact2.Text = "";
                     lblact3.Text = "";
+                    info.health = 1;
+                    lblhealthnum.Text = "1";
                     traps = false;
                 }
                 else if(rngnum == 4)
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You throw your sowrd repediatly at all the traps taking some damage in the process until they are all gone. Then you hear a click from the direction of the door.";
                     lblact2.Text = "";
                     lblact3.Text = "";
+                    info.health = 8;
+                    lblhealthnum.Text = "8";
                     traps = false;
                 }
                 else
@@ -103,19 +106,21 @@ namespace RPGgameproject
                     lblact2.Text = "";
                     lblact3.Text = "";
                     lblact4.Text = "";
-                    lblhealthnum.Text = "0";
                     info.health = 0;
+                    lblhealthnum.Text = "0";
                 }
             }
             else
             {
-                
+                lblresults.Text = "";
+                lblact2.Text = "";
+                lblact3.Text = "";
             }
         }
 
         private void lblact3_Click(object sender, EventArgs e)
         {
-            if (info.magic >= 3)
+            if (info.magic >= 2)
             {
                 if(info.luck >= 4)
                 {
@@ -131,8 +136,13 @@ namespace RPGgameproject
             }
             else
             {
-                lblresults.Text = "You acidentily steped on a preassure plate and got shot in the knee with a arrow. You suddenly feel compelled to say 'I used to be an adventurer like you. Then I took an arrow in the knee.'";
+                lblresults.Text = "When you go to cast magic you acidentily step on a preassure plate and got shot in the knee with a arrow. You suddenly feel compelled to say 'I used to be an adventurer like you. Then I took an arrow in the knee.'";
                 lblact2.Text = "2. Disarm Traps";
+                info.health = 9;
+                lblhealthnum.Text = "9";
+                info.dexterity = info.dexterity - 1;
+                lbldexnum.Text = "" + info.dexterity;
+
             }
         }
 
