@@ -22,5 +22,17 @@ namespace RPGgameproject
             pbdeath.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
+
+        private void btnstartover_Click(object sender, EventArgs e)
+        {
+            CharacterCreation go = new CharacterCreation();
+            go.Show();
+            this.Hide();
+        }
+
+        private void btnclosegame_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

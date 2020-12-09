@@ -59,7 +59,7 @@
             // 
             // pbroomtwo
             // 
-            this.pbroomtwo.Location = new System.Drawing.Point(249, 12);
+            this.pbroomtwo.Location = new System.Drawing.Point(258, 12);
             this.pbroomtwo.Name = "pbroomtwo";
             this.pbroomtwo.Size = new System.Drawing.Size(522, 208);
             this.pbroomtwo.TabIndex = 26;
@@ -125,9 +125,9 @@
             this.lblact3.AutoSize = true;
             this.lblact3.Location = new System.Drawing.Point(26, 68);
             this.lblact3.Name = "lblact3";
-            this.lblact3.Size = new System.Drawing.Size(132, 21);
+            this.lblact3.Size = new System.Drawing.Size(112, 21);
             this.lblact3.TabIndex = 2;
-            this.lblact3.Text = "3. Search Room";
+            this.lblact3.Text = "3. Cast magic";
             this.lblact3.Click += new System.EventHandler(this.lblact3_Click);
             // 
             // lblact2
@@ -282,7 +282,7 @@
             // 
             // pbcharacter
             // 
-            this.pbcharacter.Location = new System.Drawing.Point(4, 12);
+            this.pbcharacter.Location = new System.Drawing.Point(12, 12);
             this.pbcharacter.Name = "pbcharacter";
             this.pbcharacter.Size = new System.Drawing.Size(219, 208);
             this.pbcharacter.TabIndex = 20;
