@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace RPGgameproject
 {
-    public partial class Room3 : Form
+    public partial class Bossroom : Form
     {
         Character info;
         Random rng = new Random();
-        public Room3(Character c)
+        public Bossroom(Character c)
         {
             InitializeComponent();
             info = c;
         }
 
-        private void Room3_Load(object sender, EventArgs e)
+        private void Bossroom_Load(object sender, EventArgs e)
         {
             lblstrnum.Text = "" + info.stregth;
             lblmpnum.Text = "" + info.magic;
@@ -36,28 +36,8 @@ namespace RPGgameproject
             {
                 lblact4.Text = "";
             }
-            pbroomthree.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbbossroom.SizeMode = PictureBoxSizeMode.StretchImage;
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
-        }
-
-        private void lblact1_Click(object sender, EventArgs e)
-        {
-            lblresults.Text = "";
-        }
-
-        private void lblact2_Click(object sender, EventArgs e)
-        {
-            lblresults.Text = "";
-        }
-
-        private void lblact3_Click(object sender, EventArgs e)
-        {
-            lblresults.Text = "";
-        }
-
-        private void lblact4_Click(object sender, EventArgs e)
-        {
-            lblresults.Text = "";
         }
     }
 }

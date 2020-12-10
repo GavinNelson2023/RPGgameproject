@@ -83,6 +83,16 @@ namespace RPGgameproject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Confetti_gif {
+            get {
+                object obj = ResourceManager.GetObject("Confetti gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap death_screen {
             get {
                 object obj = ResourceManager.GetObject("death screen", resourceCulture);

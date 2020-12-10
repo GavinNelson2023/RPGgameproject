@@ -20,6 +20,9 @@ namespace RPGgameproject
             info = c;
         }
 
+        public bool key;
+        public bool attacked;
+
         private void Room1_Load_1(object sender, EventArgs e)
         {
             lblstrnum.Text = "" + info.stregth;
@@ -125,9 +128,6 @@ namespace RPGgameproject
             }
         }
 
-        public bool key;
-        public bool attacked;
-        
 
         private void lblsearchoption1_Click(object sender, EventArgs e)
         {

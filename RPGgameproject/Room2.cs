@@ -21,6 +21,7 @@ namespace RPGgameproject
             info = c;
         }
 
+        public bool traps = true;
 
         private void Room2_Load(object sender, EventArgs e)
         {
@@ -42,7 +43,6 @@ namespace RPGgameproject
             pbroomtwo.SizeMode = PictureBoxSizeMode.StretchImage;
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
-        public bool traps = true;
         private void lblact1_Click(object sender, EventArgs e)
         {
             if (traps == true)
@@ -72,7 +72,7 @@ namespace RPGgameproject
                 }
                 else if(rngnum == 2)
                 {
-                    lblresults.Text = "You try and disarm the traps using magic but you end up setting off some of them. When you finish disarming the last trap you hear a click from the direction of the door.";
+                    lblresults.Text = "You try and disarm the traps using magic but you end up setting some of them off. When you finish disarming the last trap you hear a click from the direction of the door.";
                     lblact2.Text = "";
                     lblact3.Text = "";
                     info.health = 5;
@@ -84,8 +84,8 @@ namespace RPGgameproject
                     lblresults.Text = "You end up setting all the traps off at once but you some how survive. You hear a click from the direction of the door.";
                     lblact2.Text = "";
                     lblact3.Text = "";
-                    info.health = 1;
-                    lblhealthnum.Text = "1";
+                    info.health = 2;
+                    lblhealthnum.Text = "2";
                     traps = false;
                 }
                 else if(rngnum == 4)
@@ -112,9 +112,12 @@ namespace RPGgameproject
             }
             else
             {
-                lblresults.Text = "";
+                lblresults.Text = "Without thinking you start to walk torwads the door setting off every trap in the room. After you nearly escape death you hear a click from the direction of the door.";
                 lblact2.Text = "";
                 lblact3.Text = "";
+                info.health = 1;
+                lblhealthnum.Text = "1";
+                traps = false;
             }
         }
 
@@ -126,11 +129,13 @@ namespace RPGgameproject
                 {
                     lblresults.Text = "You cast a spell that reveals traps. You now can see all the traps in the room.";
                     lblact2.Text = "2. Disarm Traps";
+                    lblact3.Text = "";
                 }
                 else
                 {
                     lblresults.Text = "You cast a spell to detect danger. You now can see the whole world is dangerous but all the traps in the room are not helping that feeling.";
                     lblact2.Text = "2. Disarm Traps";
+                    lblact3.Text = "";
                 }
                 
             }
@@ -142,6 +147,8 @@ namespace RPGgameproject
                 lblhealthnum.Text = "9";
                 info.dexterity = info.dexterity - 1;
                 lbldexnum.Text = "" + info.dexterity;
+                lblact3.Text = "";
+                lblact4.Text = "4. Heal";
 
             }
         }
@@ -230,7 +237,7 @@ namespace RPGgameproject
             lblsearchoption2.Text = "";
             lblsearchoption1.Text = "";
 
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             Gameover go = new Gameover();
             go.Show();
             this.Hide();

@@ -1,7 +1,6 @@
-﻿
-namespace RPGgameproject
+﻿namespace RPGgameproject
 {
-    partial class Room3
+    partial class Room4
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +28,7 @@ namespace RPGgameproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbroomthree = new System.Windows.Forms.PictureBox();
+            this.pbroomfour = new System.Windows.Forms.PictureBox();
             this.lblsearchoption1 = new System.Windows.Forms.Label();
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblresults = new System.Windows.Forms.Label();
@@ -52,47 +51,47 @@ namespace RPGgameproject
             this.lblmpstatistic = new System.Windows.Forms.Label();
             this.lblstrstatistic = new System.Windows.Forms.Label();
             this.pbcharacter = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomthree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomfour)).BeginInit();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbroomthree
+            // pbroomfour
             // 
-            this.pbroomthree.Location = new System.Drawing.Point(266, 12);
-            this.pbroomthree.Name = "pbroomthree";
-            this.pbroomthree.Size = new System.Drawing.Size(522, 208);
-            this.pbroomthree.TabIndex = 33;
-            this.pbroomthree.TabStop = false;
+            this.pbroomfour.Location = new System.Drawing.Point(249, 12);
+            this.pbroomfour.Name = "pbroomfour";
+            this.pbroomfour.Size = new System.Drawing.Size(522, 208);
+            this.pbroomfour.TabIndex = 26;
+            this.pbroomfour.TabStop = false;
             // 
             // lblsearchoption1
             // 
             this.lblsearchoption1.AutoSize = true;
             this.lblsearchoption1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsearchoption1.Location = new System.Drawing.Point(237, 281);
+            this.lblsearchoption1.Location = new System.Drawing.Point(229, 281);
             this.lblsearchoption1.Name = "lblsearchoption1";
-            this.lblsearchoption1.Size = new System.Drawing.Size(125, 23);
-            this.lblsearchoption1.TabIndex = 32;
-            this.lblsearchoption1.Text = "1. Good news";
+            this.lblsearchoption1.Size = new System.Drawing.Size(227, 23);
+            this.lblsearchoption1.TabIndex = 25;
+            this.lblsearchoption1.Text = "1. Search around the door.";
             // 
             // lblsearchoption2
             // 
             this.lblsearchoption2.AutoSize = true;
             this.lblsearchoption2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsearchoption2.Location = new System.Drawing.Point(475, 281);
+            this.lblsearchoption2.Location = new System.Drawing.Point(467, 281);
             this.lblsearchoption2.Name = "lblsearchoption2";
-            this.lblsearchoption2.Size = new System.Drawing.Size(111, 23);
-            this.lblsearchoption2.TabIndex = 31;
-            this.lblsearchoption2.Text = "2. Bad news";
+            this.lblsearchoption2.Size = new System.Drawing.Size(330, 23);
+            this.lblsearchoption2.TabIndex = 24;
+            this.lblsearchoption2.Text = "2. Search around the edge of the room.";
             // 
             // lblresults
             // 
             this.lblresults.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresults.Location = new System.Drawing.Point(237, 245);
+            this.lblresults.Location = new System.Drawing.Point(229, 245);
             this.lblresults.Name = "lblresults";
             this.lblresults.Size = new System.Drawing.Size(551, 90);
-            this.lblresults.TabIndex = 30;
+            this.lblresults.TabIndex = 23;
             this.lblresults.Text = "a";
             // 
             // gbactions
@@ -102,10 +101,10 @@ namespace RPGgameproject
             this.gbactions.Controls.Add(this.lblact2);
             this.gbactions.Controls.Add(this.lblact1);
             this.gbactions.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbactions.Location = new System.Drawing.Point(237, 338);
+            this.gbactions.Location = new System.Drawing.Point(229, 338);
             this.gbactions.Name = "gbactions";
             this.gbactions.Size = new System.Drawing.Size(551, 100);
-            this.gbactions.TabIndex = 29;
+            this.gbactions.TabIndex = 22;
             this.gbactions.TabStop = false;
             this.gbactions.Text = "Actions:";
             // 
@@ -117,27 +116,24 @@ namespace RPGgameproject
             this.lblact4.Size = new System.Drawing.Size(62, 21);
             this.lblact4.TabIndex = 3;
             this.lblact4.Text = "4. Heal";
-            this.lblact4.Click += new System.EventHandler(this.lblact4_Click);
             // 
             // lblact3
             // 
             this.lblact3.AutoSize = true;
             this.lblact3.Location = new System.Drawing.Point(26, 68);
             this.lblact3.Name = "lblact3";
-            this.lblact3.Size = new System.Drawing.Size(112, 21);
+            this.lblact3.Size = new System.Drawing.Size(132, 21);
             this.lblact3.TabIndex = 2;
-            this.lblact3.Text = "3. Cast magic";
-            this.lblact3.Click += new System.EventHandler(this.lblact3_Click);
+            this.lblact3.Text = "3. Search Room";
             // 
             // lblact2
             // 
             this.lblact2.AutoSize = true;
             this.lblact2.Location = new System.Drawing.Point(190, 29);
             this.lblact2.Name = "lblact2";
-            this.lblact2.Size = new System.Drawing.Size(124, 21);
+            this.lblact2.Size = new System.Drawing.Size(133, 21);
             this.lblact2.TabIndex = 1;
-            this.lblact2.Text = "2. Disarm traps";
-            this.lblact2.Click += new System.EventHandler(this.lblact2_Click);
+            this.lblact2.Text = "2. Attack Enemy";
             // 
             // lblact1
             // 
@@ -147,7 +143,6 @@ namespace RPGgameproject
             this.lblact1.Size = new System.Drawing.Size(114, 21);
             this.lblact1.TabIndex = 0;
             this.lblact1.Text = "1. Open Door";
-            this.lblact1.Click += new System.EventHandler(this.lblact1_Click);
             // 
             // gbstatistics
             // 
@@ -164,10 +159,10 @@ namespace RPGgameproject
             this.gbstatistics.Controls.Add(this.lblmpstatistic);
             this.gbstatistics.Controls.Add(this.lblstrstatistic);
             this.gbstatistics.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbstatistics.Location = new System.Drawing.Point(12, 231);
+            this.gbstatistics.Location = new System.Drawing.Point(4, 231);
             this.gbstatistics.Name = "gbstatistics";
             this.gbstatistics.Size = new System.Drawing.Size(219, 207);
-            this.gbstatistics.TabIndex = 28;
+            this.gbstatistics.TabIndex = 21;
             this.gbstatistics.TabStop = false;
             this.gbstatistics.Text = "Character Statistics:";
             // 
@@ -281,28 +276,28 @@ namespace RPGgameproject
             // 
             // pbcharacter
             // 
-            this.pbcharacter.Location = new System.Drawing.Point(20, 12);
+            this.pbcharacter.Location = new System.Drawing.Point(4, 12);
             this.pbcharacter.Name = "pbcharacter";
             this.pbcharacter.Size = new System.Drawing.Size(219, 208);
-            this.pbcharacter.TabIndex = 27;
+            this.pbcharacter.TabIndex = 20;
             this.pbcharacter.TabStop = false;
             // 
-            // Room3
+            // Room4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pbroomthree);
+            this.Controls.Add(this.pbroomfour);
             this.Controls.Add(this.lblsearchoption1);
             this.Controls.Add(this.lblsearchoption2);
             this.Controls.Add(this.lblresults);
             this.Controls.Add(this.gbactions);
             this.Controls.Add(this.gbstatistics);
             this.Controls.Add(this.pbcharacter);
-            this.Name = "Room3";
-            this.Text = "Room3";
-            this.Load += new System.EventHandler(this.Room3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomthree)).EndInit();
+            this.Name = "Room4";
+            this.Text = "Room4";
+            this.Load += new System.EventHandler(this.Room4_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomfour)).EndInit();
             this.gbactions.ResumeLayout(false);
             this.gbactions.PerformLayout();
             this.gbstatistics.ResumeLayout(false);
@@ -315,7 +310,7 @@ namespace RPGgameproject
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbroomthree;
+        private System.Windows.Forms.PictureBox pbroomfour;
         private System.Windows.Forms.Label lblsearchoption1;
         private System.Windows.Forms.Label lblsearchoption2;
         private System.Windows.Forms.Label lblresults;
