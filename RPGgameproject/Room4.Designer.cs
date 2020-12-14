@@ -116,6 +116,7 @@
             this.lblact4.Size = new System.Drawing.Size(62, 21);
             this.lblact4.TabIndex = 3;
             this.lblact4.Text = "4. Heal";
+            this.lblact4.Click += new System.EventHandler(this.lblact4_Click);
             // 
             // lblact3
             // 
@@ -125,6 +126,7 @@
             this.lblact3.Size = new System.Drawing.Size(132, 21);
             this.lblact3.TabIndex = 2;
             this.lblact3.Text = "3. Search Room";
+            this.lblact3.Click += new System.EventHandler(this.lblact3_Click);
             // 
             // lblact2
             // 
@@ -134,6 +136,7 @@
             this.lblact2.Size = new System.Drawing.Size(133, 21);
             this.lblact2.TabIndex = 1;
             this.lblact2.Text = "2. Attack Enemy";
+            this.lblact2.Click += new System.EventHandler(this.lblact2_Click);
             // 
             // lblact1
             // 
@@ -143,6 +146,7 @@
             this.lblact1.Size = new System.Drawing.Size(114, 21);
             this.lblact1.TabIndex = 0;
             this.lblact1.Text = "1. Open Door";
+            this.lblact1.Click += new System.EventHandler(this.lblact1_Click);
             // 
             // gbstatistics
             // 

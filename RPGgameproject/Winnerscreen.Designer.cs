@@ -59,7 +59,6 @@
             // 
             // pbwin
             // 
-            this.pbwin.Image = global::RPGgameproject.Properties.Resources.Confetti_gif;
             this.pbwin.Location = new System.Drawing.Point(1, 2);
             this.pbwin.Name = "pbwin";
             this.pbwin.Size = new System.Drawing.Size(798, 446);
