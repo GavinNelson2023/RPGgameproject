@@ -86,7 +86,7 @@ namespace RPGgameproject
         {
             if(str != 0 && mp != 0 && dex != 0 && wis != 0 && luck != 0 && cbchracterpic.Text != "" && txtname.Text != "")
             {
-                n.stregth = str;
+                n.strength = str;
                 n.dexterity = dex;
                 n.wisdom = wis;
                 n.magic = mp;

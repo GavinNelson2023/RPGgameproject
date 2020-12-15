@@ -25,7 +25,7 @@ namespace RPGgameproject
 
         private void Room1_Load_1(object sender, EventArgs e)
         {
-            lblstrnum.Text = "" + info.stregth;
+            lblstrnum.Text = "" + info.strength;
             lblmpnum.Text = "" + info.magic;
             lbldexnum.Text = "" + info.dexterity;
             lblwisnum.Text = "" + info.wisdom;
@@ -60,7 +60,7 @@ namespace RPGgameproject
 
         private void lblact2_Click(object sender, EventArgs e)
         {
-            if(info.stregth >= 3)
+            if(info.strength >= 3)
             {
                 int rngnum = rng.Next(0,4);
                 if(rngnum == 1 || rngnum == 2)

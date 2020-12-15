@@ -22,7 +22,7 @@ namespace RPGgameproject
 
         private void Bossroom_Load(object sender, EventArgs e)
         {
-            lblstrnum.Text = "" + info.stregth;
+            lblstrnum.Text = "" + info.strength;
             lblmpnum.Text = "" + info.magic;
             lbldexnum.Text = "" + info.dexterity;
             lblwisnum.Text = "" + info.wisdom;
@@ -61,11 +61,12 @@ namespace RPGgameproject
         {
             if(weakness == false)
             {
-                if (info.stregth >= 3)
+                if (info.strength >= 3)
                 {
                     lblresults.Text = "";
+                    
                 }
-                else if (info.stregth == 2)
+                else if (info.strength == 2)
                 {
                     lblresults.Text = "";
                 }
@@ -76,7 +77,19 @@ namespace RPGgameproject
             }
             else
             {
-                lblresults.Text = "";
+                if (info.strength >= 3)
+                {
+                    lblresults.Text = "You rush the dragon before it even knows you are in the room and plunge your sword into the dragons right side";
+                    lbldragonhealth.Text = "";
+                }
+                else if (info.strength == 2)
+                {
+                    lblresults.Text = "";
+                }
+                else
+                {
+                    lblresults.Text = "";
+                }
             }
         }
 

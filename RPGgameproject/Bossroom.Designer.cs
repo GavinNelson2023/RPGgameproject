@@ -52,13 +52,13 @@
             this.pbcharacter = new System.Windows.Forms.PictureBox();
             this.pbdragon = new System.Windows.Forms.PictureBox();
             this.gbdragon = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbldragonhealth = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbldragonluck = new System.Windows.Forms.Label();
+            this.lbldragonwisdom = new System.Windows.Forms.Label();
+            this.lbldragondexterity = new System.Windows.Forms.Label();
+            this.lbldragonmagic = new System.Windows.Forms.Label();
+            this.lbldragonstrength = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -302,13 +302,13 @@
             // 
             // gbdragon
             // 
-            this.gbdragon.Controls.Add(this.label1);
+            this.gbdragon.Controls.Add(this.lbldragonhealth);
             this.gbdragon.Controls.Add(this.label2);
-            this.gbdragon.Controls.Add(this.label3);
-            this.gbdragon.Controls.Add(this.label4);
-            this.gbdragon.Controls.Add(this.label5);
-            this.gbdragon.Controls.Add(this.label6);
-            this.gbdragon.Controls.Add(this.label7);
+            this.gbdragon.Controls.Add(this.lbldragonluck);
+            this.gbdragon.Controls.Add(this.lbldragonwisdom);
+            this.gbdragon.Controls.Add(this.lbldragondexterity);
+            this.gbdragon.Controls.Add(this.lbldragonmagic);
+            this.gbdragon.Controls.Add(this.lbldragonstrength);
             this.gbdragon.Controls.Add(this.label8);
             this.gbdragon.Controls.Add(this.label9);
             this.gbdragon.Controls.Add(this.label10);
@@ -322,14 +322,14 @@
             this.gbdragon.TabStop = false;
             this.gbdragon.Text = "Dragon stats:";
             // 
-            // label1
+            // lbldragonhealth
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 27);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "30";
+            this.lbldragonhealth.AutoSize = true;
+            this.lbldragonhealth.Location = new System.Drawing.Point(124, 175);
+            this.lbldragonhealth.Name = "lbldragonhealth";
+            this.lbldragonhealth.Size = new System.Drawing.Size(36, 27);
+            this.lbldragonhealth.TabIndex = 13;
+            this.lbldragonhealth.Text = "30";
             // 
             // label2
             // 
@@ -340,50 +340,50 @@
             this.label2.TabIndex = 12;
             this.label2.Text = "Health:";
             // 
-            // label3
+            // lbldragonluck
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 27);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "4";
+            this.lbldragonluck.AutoSize = true;
+            this.lbldragonluck.Location = new System.Drawing.Point(136, 148);
+            this.lbldragonluck.Name = "lbldragonluck";
+            this.lbldragonluck.Size = new System.Drawing.Size(24, 27);
+            this.lbldragonluck.TabIndex = 9;
+            this.lbldragonluck.Text = "4";
             // 
-            // label4
+            // lbldragonwisdom
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(136, 121);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 27);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "5";
+            this.lbldragonwisdom.AutoSize = true;
+            this.lbldragonwisdom.Location = new System.Drawing.Point(136, 121);
+            this.lbldragonwisdom.Name = "lbldragonwisdom";
+            this.lbldragonwisdom.Size = new System.Drawing.Size(24, 27);
+            this.lbldragonwisdom.TabIndex = 8;
+            this.lbldragonwisdom.Text = "5";
             // 
-            // label5
+            // lbldragondexterity
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(136, 94);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 27);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "2";
+            this.lbldragondexterity.AutoSize = true;
+            this.lbldragondexterity.Location = new System.Drawing.Point(136, 94);
+            this.lbldragondexterity.Name = "lbldragondexterity";
+            this.lbldragondexterity.Size = new System.Drawing.Size(24, 27);
+            this.lbldragondexterity.TabIndex = 7;
+            this.lbldragondexterity.Text = "2";
             // 
-            // label6
+            // lbldragonmagic
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(136, 62);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 27);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "4";
+            this.lbldragonmagic.AutoSize = true;
+            this.lbldragonmagic.Location = new System.Drawing.Point(136, 62);
+            this.lbldragonmagic.Name = "lbldragonmagic";
+            this.lbldragonmagic.Size = new System.Drawing.Size(24, 27);
+            this.lbldragonmagic.TabIndex = 6;
+            this.lbldragonmagic.Text = "4";
             // 
-            // label7
+            // lbldragonstrength
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(136, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(24, 27);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "5";
+            this.lbldragonstrength.AutoSize = true;
+            this.lbldragonstrength.Location = new System.Drawing.Point(136, 35);
+            this.lbldragonstrength.Name = "lbldragonstrength";
+            this.lbldragonstrength.Size = new System.Drawing.Size(24, 27);
+            this.lbldragonstrength.TabIndex = 5;
+            this.lbldragonstrength.Text = "5";
             // 
             // label8
             // 
@@ -484,13 +484,13 @@
         private System.Windows.Forms.PictureBox pbcharacter;
         private System.Windows.Forms.PictureBox pbdragon;
         private System.Windows.Forms.GroupBox gbdragon;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbldragonhealth;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbldragonluck;
+        private System.Windows.Forms.Label lbldragonwisdom;
+        private System.Windows.Forms.Label lbldragondexterity;
+        private System.Windows.Forms.Label lbldragonmagic;
+        private System.Windows.Forms.Label lbldragonstrength;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
