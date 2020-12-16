@@ -25,7 +25,7 @@ namespace RPGgameproject
 
         private void Room2_Load(object sender, EventArgs e)
         {
-            lblstrnum.Text = "" + info.stregth;
+            lblstrnum.Text = "" + info.strength;
             lblmpnum.Text = "" + info.magic;
             lbldexnum.Text = "" + info.dexterity;
             lblwisnum.Text = "" + info.wisdom;

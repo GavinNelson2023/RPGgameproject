@@ -15,11 +15,6 @@ namespace RPGgameproject
         public int magic;
         public int luck;
         public int health;
-        public int dragonstrength;
-        public int dragondexterity;
-        public int dragonwisdom;
-        public int dragonmagic;
-        public int dragonluck;
         public int dragonhealth;
 
 

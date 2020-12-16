@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace RPGgameproject
 {
@@ -34,7 +35,7 @@ namespace RPGgameproject
             lblsearchoption2.Text = "";
             if (info.health == 10)
             {
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
             pbdragon.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -63,32 +64,405 @@ namespace RPGgameproject
             {
                 if (info.strength >= 3)
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You attack the dragon without a plan.";
+                    int rngnum = rng.Next(0, 4);
+                    int dragonrngnum = rng.Next(0, 3);
+                    if (dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 3;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 3 damage to the dragon.";
+                        }
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss";
+                        }
+                    }
+                }
+                else if (info.strength == 2)
+                {
+                    lblresults.Text = "You attack the dragon without a plan.";
+                    int rngnum = rng.Next(0, 4);
+                    int dragonrngnum = rng.Next(0, 3);
+                    if (dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+                            
+                            lblresults.Text = "Your sword bounces off the dragons scales.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            
+                            lblresults.Text = "The dragon knocks you over with it's tale stoping you from attacking.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon. Only because the dragon caught your sword in it's claw causing a small cut.";
+                        }
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss";
+                        }
+                    }
+                }
+                else
+                {
+                    lblresults.Text = "You attack the dragon without a plan and you miss the dragon completly.";
+
+                }
+            }
+            else //if weakness == true;
+            {
+                if (info.strength >= 3)
+                {
+                    lblresults.Text = "You attack the dragon.";
+                    Thread.Sleep(1500);
+                    int rngnum = rng.Next(0,4);
+                    int dragonrngnum = rng.Next(0,3);
+                    if(dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 3;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 3 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 4;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 4 damage to the dragon.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 5;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 5 damage to the dragon.";
+                        }
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss";
+                        }
+                    }
                     
                 }
                 else if (info.strength == 2)
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You throw your sword at the dragon.";
+                    int rngnum = rng.Next(0, 4);
+                    int dragonrngnum = rng.Next(0, 3);
+                    if (dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon and you retrieve your sword.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 3;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 3 damage to the dragon and you retrieve your sword.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 4;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 4 damage to the dragon and you retrieve your sword.";
+                        }
+                        
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon and you retrieve your sword.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon and you retrieve your sword.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss but you end up retrieving your sword.";
+                        }
+                    }
                 }
                 else
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You try try to attack the dragon. But the dragon holds you in place at a safe distance with a long stick.";
+                    lblact2.Text = "";
                 }
             }
-            else
+        }
+        private void lblact3_Click_1(object sender, EventArgs e)
+        {
+            if (weakness == false)
             {
                 if (info.strength >= 3)
                 {
-                    lblresults.Text = "You rush the dragon before it even knows you are in the room and plunge your sword into the dragons right side";
-                    lbldragonhealth.Text = "";
+                    lblresults.Text = "You attack the dragon without a plan.";
+                    int rngnum = rng.Next(0, 4);
+                    int dragonrngnum = rng.Next(0, 3);
+                    if (dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 3;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 3 damage to the dragon.";
+                        }
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss";
+                        }
+                    }
                 }
                 else if (info.strength == 2)
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You attack the dragon without a plan.";
+                    int rngnum = rng.Next(0, 4);
+                    int dragonrngnum = rng.Next(0, 3);
+                    if (dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+
+                            lblresults.Text = "Your sword bounces off the dragons scales.";
+                        }
+                        else if (rngnum == 2)
+                        {
+
+                            lblresults.Text = "The dragon knocks you over with it's tale stoping you from attacking.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon. Only because the dragon caught your sword in it's claw causing a small cut.";
+                        }
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss";
+                        }
+                    }
                 }
                 else
                 {
-                    lblresults.Text = "";
+                    lblresults.Text = "You attack the dragon without a plan and you miss the dragon completly.";
+
+                }
+            }
+            else //if weakness == true;
+            {
+                if (info.strength >= 3)
+                {
+                    lblresults.Text = "You attack the dragon.";
+                    Thread.Sleep(1500);
+                    int rngnum = rng.Next(0, 4);
+                    int dragonrngnum = rng.Next(0, 3);
+                    if (dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 3;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 3 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 4;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 4 damage to the dragon.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 5;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 5 damage to the dragon.";
+                        }
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss";
+                        }
+                    }
+
+                }
+                else if (info.strength == 2)
+                {
+                    lblresults.Text = "You throw your sword at the dragon.";
+                    int rngnum = rng.Next(0, 4);
+                    int dragonrngnum = rng.Next(0, 3);
+                    if (dragonrngnum == 1)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon and you retrieve your sword.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 3;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 3 damage to the dragon and you retrieve your sword.";
+                        }
+                        else
+                        {
+                            info.dragonhealth = info.dragonhealth - 4;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 4 damage to the dragon and you retrieve your sword.";
+                        }
+
+                    }
+                    else if (dragonrngnum == 2)
+                    {
+                        if (rngnum == 1)
+                        {
+                            info.dragonhealth = info.dragonhealth - 2;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 2 damage to the dragon and you retrieve your sword.";
+                        }
+                        else if (rngnum == 2)
+                        {
+                            info.dragonhealth = info.dragonhealth - 1;
+                            lbldragonhealth.Text = "" + info.dragonhealth;
+                            lblresults.Text = "You deal 1 damage to the dragon and you retrieve your sword.";
+                        }
+                        else
+                        {
+                            lblresults.Text = "You miss but you end up retrieving your sword.";
+                        }
+                    }
+                }
+                else
+                {
+                    lblresults.Text = "You try try to attack the dragon. But the dragon holds you in place at a safe distance with a long stick.";
+                    lblact2.Text = "";
                 }
             }
         }
@@ -100,37 +474,37 @@ namespace RPGgameproject
             {
                 lblresults.Text = "You focus on the Dragon in the room. You see that the dragon has a small area of sclaes missing on the right side of it's body.";
                 weakness = true;
-                lblact3.Text = "";
+                lblact4.Text = "";
             }
             else if (info.wisdom >= 3 && info.dexterity >= 3 && rngnum == 2)
             {
                 lblresults.Text = "You focus on the Dragon in the room. You notice the dragon has a slight limp on it's right side.";
                 weakness = true;
-                lblact3.Text = "";
+                lblact4.Text = "";
             }
             else if(info.wisdom >= 3 && info.dexterity >= 3 && rngnum == 3)
             {
                 lblresults.Text = "You focus on the Dragon in the room. You see that it still has an open wound on the right side of it's body";
                 weakness = true;
-                lblact3.Text = "";
+                lblact4.Text = "";
             }
             else if(info.wisdom >= 3 && info.dexterity >= 3 && rngnum == 4)
             {
                 lblresults.Text = "You focus on the Dragon in the room. You see that the dragon is blind in it's right eye.";
                 weakness = true;
-                lblact3.Text = "";
+                lblact4.Text = "";
             }
             else if (info.wisdom >= 3 && info.dexterity >= 3 && rngnum == 5)
             {
                 lblresults.Text = "You focus on the Dragon in the room. You end up focusing a little to hard. You get a really bad headache and then you blackout falling onto a convenient pile of swords.";
                 info.health = info.health - 2;
                 lblhealthnum.Text = "" + info.health;
-                lblact3.Text = "";
+                lblact4.Text = "";
             }
             else
             {
                 lblresults.Text = "You focus on the Dragon in the room. You don't see any weaknesses";
-                lblact3.Text = "";
+                lblact4.Text = "";
             }
         }
 
@@ -145,56 +519,56 @@ namespace RPGgameproject
                 info.health = 10;
                 lblresults.Text = "You heal to full health.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else if (info.health == 7)
             {
                 info.health = 9;
                 lblresults.Text = "You heal for two points of damage.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else if (info.health == 6)
             {
                 info.health = 8;
                 lblresults.Text = "You heal for two points of damage.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else if (info.health == 5)
             {
                 info.health = 7;
                 lblresults.Text = "You heal for two points of damage.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else if (info.health == 4)
             {
                 info.health = 6;
                 lblresults.Text = "You heal for two points of damage.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else if (info.health == 3)
             {
                 info.health = 5;
                 lblresults.Text = "You heal for two points of damage.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else if (info.health == 2)
             {
                 info.health = 4;
                 lblresults.Text = "You heal for two points of damage.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else if (info.health == 1)
             {
                 info.health = 3;
                 lblresults.Text = "You heal for two points of damage.";
                 lblhealthnum.Text = "" + info.health;
-                lblact4.Text = "";
+                lblact5.Text = "";
             }
             else
             {
@@ -205,6 +579,6 @@ namespace RPGgameproject
 
         }
 
-       
+        
     }
 }

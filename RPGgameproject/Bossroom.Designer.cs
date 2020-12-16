@@ -32,8 +32,8 @@
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblresults = new System.Windows.Forms.Label();
             this.gbactions = new System.Windows.Forms.GroupBox();
+            this.lblact5 = new System.Windows.Forms.Label();
             this.lblact4 = new System.Windows.Forms.Label();
-            this.lblact3 = new System.Windows.Forms.Label();
             this.lblact2 = new System.Windows.Forms.Label();
             this.lblact1 = new System.Windows.Forms.Label();
             this.gbstatistics = new System.Windows.Forms.GroupBox();
@@ -64,6 +64,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.lblact3 = new System.Windows.Forms.Label();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
@@ -102,8 +103,9 @@
             // 
             // gbactions
             // 
-            this.gbactions.Controls.Add(this.lblact4);
             this.gbactions.Controls.Add(this.lblact3);
+            this.gbactions.Controls.Add(this.lblact5);
+            this.gbactions.Controls.Add(this.lblact4);
             this.gbactions.Controls.Add(this.lblact2);
             this.gbactions.Controls.Add(this.lblact1);
             this.gbactions.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,25 +116,25 @@
             this.gbactions.TabStop = false;
             this.gbactions.Text = "Actions:";
             // 
+            // lblact5
+            // 
+            this.lblact5.AutoSize = true;
+            this.lblact5.Location = new System.Drawing.Point(190, 68);
+            this.lblact5.Name = "lblact5";
+            this.lblact5.Size = new System.Drawing.Size(62, 21);
+            this.lblact5.TabIndex = 3;
+            this.lblact5.Text = "5. Heal";
+            this.lblact5.Click += new System.EventHandler(this.lblact4_Click);
+            // 
             // lblact4
             // 
             this.lblact4.AutoSize = true;
-            this.lblact4.Location = new System.Drawing.Point(190, 68);
+            this.lblact4.Location = new System.Drawing.Point(26, 68);
             this.lblact4.Name = "lblact4";
-            this.lblact4.Size = new System.Drawing.Size(62, 21);
-            this.lblact4.TabIndex = 3;
-            this.lblact4.Text = "4. Heal";
-            this.lblact4.Click += new System.EventHandler(this.lblact4_Click);
-            // 
-            // lblact3
-            // 
-            this.lblact3.AutoSize = true;
-            this.lblact3.Location = new System.Drawing.Point(26, 68);
-            this.lblact3.Name = "lblact3";
-            this.lblact3.Size = new System.Drawing.Size(158, 21);
-            this.lblact3.TabIndex = 2;
-            this.lblact3.Text = "3. Find Weaknesses";
-            this.lblact3.Click += new System.EventHandler(this.lblact3_Click);
+            this.lblact4.Size = new System.Drawing.Size(158, 21);
+            this.lblact4.TabIndex = 2;
+            this.lblact4.Text = "4. Find Weaknesses";
+            this.lblact4.Click += new System.EventHandler(this.lblact3_Click);
             // 
             // lblact2
             // 
@@ -430,6 +432,16 @@
             this.label12.TabIndex = 0;
             this.label12.Text = "Str:";
             // 
+            // lblact3
+            // 
+            this.lblact3.AutoSize = true;
+            this.lblact3.Location = new System.Drawing.Point(350, 29);
+            this.lblact3.Name = "lblact3";
+            this.lblact3.Size = new System.Drawing.Size(222, 21);
+            this.lblact3.TabIndex = 4;
+            this.lblact3.Text = "3. Attack Dragon with magic";
+            this.lblact3.Click += new System.EventHandler(this.lblact3_Click_1);
+            // 
             // Bossroom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -464,8 +476,8 @@
         private System.Windows.Forms.Label lblsearchoption2;
         private System.Windows.Forms.Label lblresults;
         private System.Windows.Forms.GroupBox gbactions;
+        private System.Windows.Forms.Label lblact5;
         private System.Windows.Forms.Label lblact4;
-        private System.Windows.Forms.Label lblact3;
         private System.Windows.Forms.Label lblact2;
         private System.Windows.Forms.Label lblact1;
         private System.Windows.Forms.GroupBox gbstatistics;
@@ -496,5 +508,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblact3;
     }
 }
