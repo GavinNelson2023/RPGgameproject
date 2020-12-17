@@ -32,6 +32,7 @@
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblresults = new System.Windows.Forms.Label();
             this.gbactions = new System.Windows.Forms.GroupBox();
+            this.lblact3 = new System.Windows.Forms.Label();
             this.lblact5 = new System.Windows.Forms.Label();
             this.lblact4 = new System.Windows.Forms.Label();
             this.lblact2 = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.lblact3 = new System.Windows.Forms.Label();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
@@ -115,6 +115,16 @@
             this.gbactions.TabIndex = 22;
             this.gbactions.TabStop = false;
             this.gbactions.Text = "Actions:";
+            // 
+            // lblact3
+            // 
+            this.lblact3.AutoSize = true;
+            this.lblact3.Location = new System.Drawing.Point(350, 29);
+            this.lblact3.Name = "lblact3";
+            this.lblact3.Size = new System.Drawing.Size(222, 21);
+            this.lblact3.TabIndex = 4;
+            this.lblact3.Text = "3. Attack Dragon with magic";
+            this.lblact3.Click += new System.EventHandler(this.lblact3_Click_1);
             // 
             // lblact5
             // 
@@ -296,9 +306,10 @@
             // 
             // pbdragon
             // 
+            this.pbdragon.Image = global::RPGgameproject.Properties.Resources.dragon;
             this.pbdragon.Location = new System.Drawing.Point(423, 16);
             this.pbdragon.Name = "pbdragon";
-            this.pbdragon.Size = new System.Drawing.Size(166, 203);
+            this.pbdragon.Size = new System.Drawing.Size(161, 202);
             this.pbdragon.TabIndex = 26;
             this.pbdragon.TabStop = false;
             // 
@@ -431,16 +442,6 @@
             this.label12.Size = new System.Drawing.Size(45, 27);
             this.label12.TabIndex = 0;
             this.label12.Text = "Str:";
-            // 
-            // lblact3
-            // 
-            this.lblact3.AutoSize = true;
-            this.lblact3.Location = new System.Drawing.Point(350, 29);
-            this.lblact3.Name = "lblact3";
-            this.lblact3.Size = new System.Drawing.Size(222, 21);
-            this.lblact3.TabIndex = 4;
-            this.lblact3.Text = "3. Attack Dragon with magic";
-            this.lblact3.Click += new System.EventHandler(this.lblact3_Click_1);
             // 
             // Bossroom
             // 

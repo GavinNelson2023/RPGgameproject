@@ -266,7 +266,7 @@ namespace RPGgameproject
         {
             if (weakness == false)
             {
-                if (info.strength >= 3)
+                if (info.magic >= 3)
                 {
                     lblresults.Text = "You attack the dragon without a plan.";
                     int rngnum = rng.Next(0, 4);
@@ -312,7 +312,7 @@ namespace RPGgameproject
                         }
                     }
                 }
-                else if (info.strength == 2)
+                else if (info.magic == 2)
                 {
                     lblresults.Text = "You attack the dragon without a plan.";
                     int rngnum = rng.Next(0, 4);
@@ -322,7 +322,7 @@ namespace RPGgameproject
                         if (rngnum == 1)
                         {
 
-                            lblresults.Text = "Your sword bounces off the dragons scales.";
+                            lblresults.Text = "Your spell bounces off the dragons scales.";
                         }
                         else if (rngnum == 2)
                         {
@@ -333,7 +333,7 @@ namespace RPGgameproject
                         {
                             info.dragonhealth = info.dragonhealth - 1;
                             lbldragonhealth.Text = "" + info.dragonhealth;
-                            lblresults.Text = "You deal 1 damage to the dragon. Only because the dragon caught your sword in it's claw causing a small cut.";
+                            lblresults.Text = "You deal 1 damage to the dragon because you went for a low blow. The dragon's face.";
                         }
                     }
                     else if (dragonrngnum == 2)
@@ -364,7 +364,7 @@ namespace RPGgameproject
             }
             else //if weakness == true;
             {
-                if (info.strength >= 3)
+                if (info.magic >= 3)
                 {
                     lblresults.Text = "You attack the dragon.";
                     Thread.Sleep(1500);
@@ -412,9 +412,9 @@ namespace RPGgameproject
                     }
 
                 }
-                else if (info.strength == 2)
+                else if (info.magic == 2)
                 {
-                    lblresults.Text = "You throw your sword at the dragon.";
+                    lblresults.Text = "You cast a random spell and hope that it works.";
                     int rngnum = rng.Next(0, 4);
                     int dragonrngnum = rng.Next(0, 3);
                     if (dragonrngnum == 1)
@@ -423,19 +423,19 @@ namespace RPGgameproject
                         {
                             info.dragonhealth = info.dragonhealth - 2;
                             lbldragonhealth.Text = "" + info.dragonhealth;
-                            lblresults.Text = "You deal 2 damage to the dragon and you retrieve your sword.";
+                            lblresults.Text = "You cast a confusion spell on the dragon so it falls onto a convenient pile of swords. The dragon takes 2 points of damage.";
                         }
                         else if (rngnum == 2)
                         {
                             info.dragonhealth = info.dragonhealth - 3;
                             lbldragonhealth.Text = "" + info.dragonhealth;
-                            lblresults.Text = "You deal 3 damage to the dragon and you retrieve your sword.";
+                            lblresults.Text = "You cast frostblot and deal 3 damage to the dragon.";
                         }
                         else
                         {
                             info.dragonhealth = info.dragonhealth - 4;
                             lbldragonhealth.Text = "" + info.dragonhealth;
-                            lblresults.Text = "You deal 4 damage to the dragon and you retrieve your sword.";
+                            lblresults.Text = "You cast animate dead causing multiple nearby skeletons to shudder to life again and start to stumble torwads the dragon. The skeletons deal 4 damage to the dragon.";
                         }
 
                     }
@@ -445,24 +445,24 @@ namespace RPGgameproject
                         {
                             info.dragonhealth = info.dragonhealth - 2;
                             lbldragonhealth.Text = "" + info.dragonhealth;
-                            lblresults.Text = "You deal 2 damage to the dragon and you retrieve your sword.";
+                            lblresults.Text = "You cast fire bolt dealing 2 damage to the dragon.";
                         }
                         else if (rngnum == 2)
                         {
                             info.dragonhealth = info.dragonhealth - 1;
                             lbldragonhealth.Text = "" + info.dragonhealth;
-                            lblresults.Text = "You deal 1 damage to the dragon and you retrieve your sword.";
+                            lblresults.Text = "You cast a mind control spell but you end up contoling a very large mass of ants. The ants deal 1 damage to the dragon.";
                         }
                         else
                         {
-                            lblresults.Text = "You miss but you end up retrieving your sword.";
+                            lblresults.Text = "You miss but you end up causing a massive explosion.";
                         }
                     }
                 }
                 else
                 {
-                    lblresults.Text = "You try try to attack the dragon. But the dragon holds you in place at a safe distance with a long stick.";
-                    lblact2.Text = "";
+                    lblresults.Text = "You try try to attack the dragon. But the dragon casts a counter spell that negates any spell cast within it's range";
+                    lblact3.Text = "";
                 }
             }
         }

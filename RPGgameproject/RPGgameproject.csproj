@@ -166,6 +166,7 @@
     <None Include="Resources\Wizard Alligator.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\dragon.png" />
     <None Include="Resources\death screen.png" />
     <None Include="Resources\Confetti gif.gif" />
     <Content Include="Resources\download.jpg" />
