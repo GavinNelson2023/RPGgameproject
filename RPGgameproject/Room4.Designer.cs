@@ -51,6 +51,8 @@
             this.lblmpstatistic = new System.Windows.Forms.Label();
             this.lblstrstatistic = new System.Windows.Forms.Label();
             this.pbcharacter = new System.Windows.Forms.PictureBox();
+            this.lblmimichealthnum = new System.Windows.Forms.Label();
+            this.lblenemyhealth = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbroomfour)).BeginInit();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
@@ -123,9 +125,9 @@
             this.lblact3.AutoSize = true;
             this.lblact3.Location = new System.Drawing.Point(26, 68);
             this.lblact3.Name = "lblact3";
-            this.lblact3.Size = new System.Drawing.Size(132, 21);
+            this.lblact3.Size = new System.Drawing.Size(128, 21);
             this.lblact3.TabIndex = 2;
-            this.lblact3.Text = "3. Search Room";
+            this.lblact3.Text = "3. Search Chest";
             this.lblact3.Click += new System.EventHandler(this.lblact3_Click);
             // 
             // lblact2
@@ -286,11 +288,33 @@
             this.pbcharacter.TabIndex = 20;
             this.pbcharacter.TabStop = false;
             // 
+            // lblmimichealthnum
+            // 
+            this.lblmimichealthnum.AutoSize = true;
+            this.lblmimichealthnum.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmimichealthnum.Location = new System.Drawing.Point(688, 231);
+            this.lblmimichealthnum.Name = "lblmimichealthnum";
+            this.lblmimichealthnum.Size = new System.Drawing.Size(19, 21);
+            this.lblmimichealthnum.TabIndex = 14;
+            this.lblmimichealthnum.Text = "0";
+            // 
+            // lblenemyhealth
+            // 
+            this.lblenemyhealth.AutoSize = true;
+            this.lblenemyhealth.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblenemyhealth.Location = new System.Drawing.Point(565, 231);
+            this.lblenemyhealth.Name = "lblenemyhealth";
+            this.lblenemyhealth.Size = new System.Drawing.Size(117, 21);
+            this.lblenemyhealth.TabIndex = 15;
+            this.lblenemyhealth.Text = "Enemy Health:";
+            // 
             // Room4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblmimichealthnum);
+            this.Controls.Add(this.lblenemyhealth);
             this.Controls.Add(this.pbroomfour);
             this.Controls.Add(this.lblsearchoption1);
             this.Controls.Add(this.lblsearchoption2);
@@ -337,5 +361,7 @@
         private System.Windows.Forms.Label lblmpstatistic;
         private System.Windows.Forms.Label lblstrstatistic;
         private System.Windows.Forms.PictureBox pbcharacter;
+        private System.Windows.Forms.Label lblmimichealthnum;
+        private System.Windows.Forms.Label lblenemyhealth;
     }
 }

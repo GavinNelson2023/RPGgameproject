@@ -32,7 +32,7 @@ namespace RPGgameproject
             lbllucknum.Text = "" + info.luck;
             lblhealthnum.Text = "" + info.health;
             pbcharacter.Image = info.picture;
-            lblresults.Text = "";
+            lblresults.Text = "You enter a samll room with a Skeleton standing in the middle of the room. He does not seem to notice you when you enter.";
             lblsearchoption1.Text = "";
             lblsearchoption2.Text = "";
             if (info.health == 10)

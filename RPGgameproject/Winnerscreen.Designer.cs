@@ -33,6 +33,7 @@
             this.pbwin = new System.Windows.Forms.PictureBox();
             this.pbcharacter = new System.Windows.Forms.PictureBox();
             this.lblcongatulations = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbwin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
             this.SuspendLayout();
@@ -77,17 +78,27 @@
             // 
             this.lblcongatulations.AutoSize = true;
             this.lblcongatulations.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcongatulations.Location = new System.Drawing.Point(192, 288);
+            this.lblcongatulations.Location = new System.Drawing.Point(146, 281);
             this.lblcongatulations.Name = "lblcongatulations";
-            this.lblcongatulations.Size = new System.Drawing.Size(414, 31);
+            this.lblcongatulations.Size = new System.Drawing.Size(497, 31);
             this.lblcongatulations.TabIndex = 22;
-            this.lblcongatulations.Text = "Congratulations You Beat the Game!";
+            this.lblcongatulations.Text = "Congratulations                    Beat the Game!";
+            // 
+            // lblname
+            // 
+            this.lblname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.Location = new System.Drawing.Point(333, 289);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(128, 31);
+            this.lblname.TabIndex = 23;
+            this.lblname.Text = "label1";
             // 
             // Winnerscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblname);
             this.Controls.Add(this.lblcongatulations);
             this.Controls.Add(this.pbcharacter);
             this.Controls.Add(this.btnclosegame);
@@ -110,5 +121,6 @@
         private System.Windows.Forms.PictureBox pbwin;
         private System.Windows.Forms.PictureBox pbcharacter;
         private System.Windows.Forms.Label lblcongatulations;
+        private System.Windows.Forms.Label lblname;
     }
 }

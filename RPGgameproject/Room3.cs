@@ -29,9 +29,10 @@ namespace RPGgameproject
             lbllucknum.Text = "" + info.luck;
             lblhealthnum.Text = "" + info.health;
             pbcharacter.Image = info.picture;
-            lblresults.Text = "";
+            lblresults.Text = "You enter a large room full of tables, chairs, books, and bookshelves. There is a door directly acroos from you.";
             lblsearchoption1.Text = "";
             lblsearchoption2.Text = "";
+            lblact2.Text = "";
             if (info.health == 10)
             {
                 lblact4.Text = "";
@@ -40,11 +41,12 @@ namespace RPGgameproject
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         public bool door = false;
+        public bool Switch = false;
         private void lblact1_Click(object sender, EventArgs e)
         {
-            if (door == true)
+            if (door == false)
             {
-                lblresults.Text = "You try to open the door but it is still locked. You feel like you have to destroy something in the room inorder to leave.";
+                lblresults.Text = "You try to open the door but it is still locked. There must be a hidden switch nearby.";
             }
             else
             {
@@ -56,12 +58,31 @@ namespace RPGgameproject
 
         private void lblact2_Click(object sender, EventArgs e)
         {
-            lblresults.Text = "";
+            if(Switch == true)
+            {
+                lblresults.Text = "You turn the hidden switch on and then you hear a faint click from the direction of the door opposite from where you came in.";
+                door = true;
+                lblact2.Text = "";
+            }
+            
         }
 
         private void lblact3_Click(object sender, EventArgs e)
         {
-            lblresults.Text = "";
+            if (info.magic >= 3)
+            {
+                lblresults.Text = "You cast a spell that revels the hidden switch in the room.";
+                lblact3.Text = "";
+                lblact2.Text = "2. Activate Hidden Switch";
+                Switch = true;
+            }
+            else
+            {
+                lblresults.Text = "You can't seem to get any spell to work in this room. But you randomly stumbled upon a hidden Switch behimd a bookshelf.";
+                lblact3.Text = "";
+                lblact2.Text = "2. Activate Hidden Switch";
+                Switch = true;
+            }
         }
 
         private void lblact4_Click(object sender, EventArgs e)
@@ -131,6 +152,40 @@ namespace RPGgameproject
                 Gameover go = new Gameover();
                 go.Show();
                 this.Hide();
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            if(info.luck >= 3)
+            {
+                int rngnum = rng.Next(0, 3);
+                if(rngnum == 1)
+                {
+                    lblresults.Text = "When you are done reading the book you chose you suddenly feel stronger.";
+                    info.strength = info.strength + 1;
+                    lblstrnum.Text = "" + info.strength;
+                    lblact5.Text = "";
+                }
+                else if(rngnum == 2)
+                {
+                    lblresults.Text = "When you are done reading the book you chose you suddenly feel faster and more nimble.";
+                    info.dexterity = info.dexterity + 1;
+                    lbldexnum.Text = "" + info.dexterity;
+                    lblact5.Text = "";
+                }
+                else
+                {
+                    lblresults.Text = "When you are done reading the book you chose you suddenly feel smarter.";
+                    info.wisdom = info.wisdom + 1;
+                    lblwisnum.Text = "" + info.wisdom;
+                    lblact5.Text = "";
+                }
+            }
+            else
+            {
+                lblresults.Text = "The book you chose is completely blank.";
+                lblact5.Text = "";
             }
         }
     }

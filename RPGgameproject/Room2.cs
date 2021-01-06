@@ -77,6 +77,7 @@ namespace RPGgameproject
                     lblact3.Text = "";
                     info.health = 5;
                     lblhealthnum.Text = "5";
+                    lblact4.Text = "4. Heal";
                     traps = false;
                 }
                 else if(rngnum == 3)
@@ -86,6 +87,7 @@ namespace RPGgameproject
                     lblact3.Text = "";
                     info.health = 2;
                     lblhealthnum.Text = "2";
+                    lblact4.Text = "4. Heal";
                     traps = false;
                 }
                 else if(rngnum == 4)
@@ -95,6 +97,7 @@ namespace RPGgameproject
                     lblact3.Text = "";
                     info.health = 8;
                     lblhealthnum.Text = "8";
+                    lblact4.Text = "4. Heal";
                     traps = false;
                 }
                 else
@@ -117,6 +120,7 @@ namespace RPGgameproject
                 lblact3.Text = "";
                 info.health = 1;
                 lblhealthnum.Text = "1";
+                lblact4.Text = "4. Heal";
                 traps = false;
             }
         }

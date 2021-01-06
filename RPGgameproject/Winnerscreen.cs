@@ -21,6 +21,7 @@ namespace RPGgameproject
 
         private void Winnerscreen_Load(object sender, EventArgs e)
         {
+            lblname.Text = info.name;
             pbcharacter.Image = info.picture;
             pbwin.SizeMode = PictureBoxSizeMode.StretchImage;
             pbcharacter.SizeMode = PictureBoxSizeMode.StretchImage;

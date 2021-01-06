@@ -52,6 +52,7 @@ namespace RPGgameproject
             this.lblmpstatistic = new System.Windows.Forms.Label();
             this.lblstrstatistic = new System.Windows.Forms.Label();
             this.pbcharacter = new System.Windows.Forms.PictureBox();
+            this.lblact5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbroomthree)).BeginInit();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
@@ -97,6 +98,7 @@ namespace RPGgameproject
             // 
             // gbactions
             // 
+            this.gbactions.Controls.Add(this.lblact5);
             this.gbactions.Controls.Add(this.lblact4);
             this.gbactions.Controls.Add(this.lblact3);
             this.gbactions.Controls.Add(this.lblact2);
@@ -134,9 +136,9 @@ namespace RPGgameproject
             this.lblact2.AutoSize = true;
             this.lblact2.Location = new System.Drawing.Point(190, 29);
             this.lblact2.Name = "lblact2";
-            this.lblact2.Size = new System.Drawing.Size(124, 21);
+            this.lblact2.Size = new System.Drawing.Size(204, 21);
             this.lblact2.TabIndex = 1;
-            this.lblact2.Text = "2. Disarm traps";
+            this.lblact2.Text = "2. Activate Hidden Switch";
             this.lblact2.Click += new System.EventHandler(this.lblact2_Click);
             // 
             // lblact1
@@ -287,6 +289,16 @@ namespace RPGgameproject
             this.pbcharacter.TabIndex = 27;
             this.pbcharacter.TabStop = false;
             // 
+            // lblact5
+            // 
+            this.lblact5.AutoSize = true;
+            this.lblact5.Location = new System.Drawing.Point(288, 68);
+            this.lblact5.Name = "lblact5";
+            this.lblact5.Size = new System.Drawing.Size(194, 21);
+            this.lblact5.TabIndex = 4;
+            this.lblact5.Text = "5. Read a Random book";
+            this.lblact5.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Room3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,5 +350,6 @@ namespace RPGgameproject
         private System.Windows.Forms.Label lblmpstatistic;
         private System.Windows.Forms.Label lblstrstatistic;
         private System.Windows.Forms.PictureBox pbcharacter;
+        private System.Windows.Forms.Label lblact5;
     }
 }
