@@ -29,11 +29,11 @@ namespace RPGgameproject
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbroomthree = new System.Windows.Forms.PictureBox();
             this.lblsearchoption1 = new System.Windows.Forms.Label();
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblresults = new System.Windows.Forms.Label();
             this.gbactions = new System.Windows.Forms.GroupBox();
+            this.lblact5 = new System.Windows.Forms.Label();
             this.lblact4 = new System.Windows.Forms.Label();
             this.lblact3 = new System.Windows.Forms.Label();
             this.lblact2 = new System.Windows.Forms.Label();
@@ -51,21 +51,13 @@ namespace RPGgameproject
             this.lbldexstatistic = new System.Windows.Forms.Label();
             this.lblmpstatistic = new System.Windows.Forms.Label();
             this.lblstrstatistic = new System.Windows.Forms.Label();
+            this.pbroomthree = new System.Windows.Forms.PictureBox();
             this.pbcharacter = new System.Windows.Forms.PictureBox();
-            this.lblact5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomthree)).BeginInit();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomthree)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbroomthree
-            // 
-            this.pbroomthree.Location = new System.Drawing.Point(266, 12);
-            this.pbroomthree.Name = "pbroomthree";
-            this.pbroomthree.Size = new System.Drawing.Size(522, 208);
-            this.pbroomthree.TabIndex = 33;
-            this.pbroomthree.TabStop = false;
             // 
             // lblsearchoption1
             // 
@@ -110,6 +102,16 @@ namespace RPGgameproject
             this.gbactions.TabIndex = 29;
             this.gbactions.TabStop = false;
             this.gbactions.Text = "Actions:";
+            // 
+            // lblact5
+            // 
+            this.lblact5.AutoSize = true;
+            this.lblact5.Location = new System.Drawing.Point(288, 68);
+            this.lblact5.Name = "lblact5";
+            this.lblact5.Size = new System.Drawing.Size(194, 21);
+            this.lblact5.TabIndex = 4;
+            this.lblact5.Text = "5. Read a Random book";
+            this.lblact5.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblact4
             // 
@@ -281,6 +283,17 @@ namespace RPGgameproject
             this.lblstrstatistic.TabIndex = 0;
             this.lblstrstatistic.Text = "Str:";
             // 
+            // pbroomthree
+            // 
+            this.pbroomthree.ErrorImage = null;
+            this.pbroomthree.Image = global::RPGgameproject.Properties.Resources.Libary_room;
+            this.pbroomthree.InitialImage = null;
+            this.pbroomthree.Location = new System.Drawing.Point(266, 12);
+            this.pbroomthree.Name = "pbroomthree";
+            this.pbroomthree.Size = new System.Drawing.Size(522, 208);
+            this.pbroomthree.TabIndex = 33;
+            this.pbroomthree.TabStop = false;
+            // 
             // pbcharacter
             // 
             this.pbcharacter.Location = new System.Drawing.Point(20, 12);
@@ -288,16 +301,6 @@ namespace RPGgameproject
             this.pbcharacter.Size = new System.Drawing.Size(219, 208);
             this.pbcharacter.TabIndex = 27;
             this.pbcharacter.TabStop = false;
-            // 
-            // lblact5
-            // 
-            this.lblact5.AutoSize = true;
-            this.lblact5.Location = new System.Drawing.Point(288, 68);
-            this.lblact5.Name = "lblact5";
-            this.lblact5.Size = new System.Drawing.Size(194, 21);
-            this.lblact5.TabIndex = 4;
-            this.lblact5.Text = "5. Read a Random book";
-            this.lblact5.Click += new System.EventHandler(this.label1_Click);
             // 
             // Room3
             // 
@@ -314,11 +317,11 @@ namespace RPGgameproject
             this.Name = "Room3";
             this.Text = "Room3";
             this.Load += new System.EventHandler(this.Room3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomthree)).EndInit();
             this.gbactions.ResumeLayout(false);
             this.gbactions.PerformLayout();
             this.gbstatistics.ResumeLayout(false);
             this.gbstatistics.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomthree)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

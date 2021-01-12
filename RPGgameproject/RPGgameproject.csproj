@@ -166,6 +166,9 @@
     <None Include="Resources\Wizard Alligator.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Trap room.png" />
+    <None Include="Resources\mimic room.png" />
+    <None Include="Resources\Libary room.png" />
     <None Include="Resources\dragon.png" />
     <None Include="Resources\death screen.png" />
     <None Include="Resources\Confetti gif.gif" />

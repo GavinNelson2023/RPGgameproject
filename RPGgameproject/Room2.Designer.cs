@@ -59,6 +59,7 @@
             // 
             // pbroomtwo
             // 
+            this.pbroomtwo.Image = global::RPGgameproject.Properties.Resources.Trap_room;
             this.pbroomtwo.Location = new System.Drawing.Point(258, 12);
             this.pbroomtwo.Name = "pbroomtwo";
             this.pbroomtwo.Size = new System.Drawing.Size(522, 208);

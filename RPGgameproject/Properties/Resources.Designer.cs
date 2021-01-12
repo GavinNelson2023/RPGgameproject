@@ -143,9 +143,39 @@ namespace RPGgameproject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Libary_room {
+            get {
+                object obj = ResourceManager.GetObject("Libary room", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mimic_room {
+            get {
+                object obj = ResourceManager.GetObject("mimic room", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Soldier_Dog {
             get {
                 object obj = ResourceManager.GetObject("Soldier Dog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Trap_room {
+            get {
+                object obj = ResourceManager.GetObject("Trap room", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

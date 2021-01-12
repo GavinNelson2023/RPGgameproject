@@ -133,8 +133,14 @@
   <data name="Alien Dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alien Dog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mimic room" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mimic room.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Soldier Dog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Soldier Dog.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Libary room" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Libary room.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Confetti gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Confetti gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,5 +153,8 @@
   </data>
   <data name="dragon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dragon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trap room" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trap room.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

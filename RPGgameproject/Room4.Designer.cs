@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbroomfour = new System.Windows.Forms.PictureBox();
             this.lblsearchoption1 = new System.Windows.Forms.Label();
             this.lblsearchoption2 = new System.Windows.Forms.Label();
             this.lblresults = new System.Windows.Forms.Label();
@@ -50,22 +49,15 @@
             this.lbldexstatistic = new System.Windows.Forms.Label();
             this.lblmpstatistic = new System.Windows.Forms.Label();
             this.lblstrstatistic = new System.Windows.Forms.Label();
-            this.pbcharacter = new System.Windows.Forms.PictureBox();
             this.lblmimichealthnum = new System.Windows.Forms.Label();
             this.lblenemyhealth = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomfour)).BeginInit();
+            this.pbroomfour = new System.Windows.Forms.PictureBox();
+            this.pbcharacter = new System.Windows.Forms.PictureBox();
             this.gbactions.SuspendLayout();
             this.gbstatistics.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomfour)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbroomfour
-            // 
-            this.pbroomfour.Location = new System.Drawing.Point(249, 12);
-            this.pbroomfour.Name = "pbroomfour";
-            this.pbroomfour.Size = new System.Drawing.Size(522, 208);
-            this.pbroomfour.TabIndex = 26;
-            this.pbroomfour.TabStop = false;
             // 
             // lblsearchoption1
             // 
@@ -90,9 +82,9 @@
             // lblresults
             // 
             this.lblresults.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblresults.Location = new System.Drawing.Point(229, 245);
+            this.lblresults.Location = new System.Drawing.Point(229, 252);
             this.lblresults.Name = "lblresults";
-            this.lblresults.Size = new System.Drawing.Size(551, 90);
+            this.lblresults.Size = new System.Drawing.Size(551, 83);
             this.lblresults.TabIndex = 23;
             this.lblresults.Text = "a";
             // 
@@ -280,14 +272,6 @@
             this.lblstrstatistic.TabIndex = 0;
             this.lblstrstatistic.Text = "Str:";
             // 
-            // pbcharacter
-            // 
-            this.pbcharacter.Location = new System.Drawing.Point(4, 12);
-            this.pbcharacter.Name = "pbcharacter";
-            this.pbcharacter.Size = new System.Drawing.Size(219, 208);
-            this.pbcharacter.TabIndex = 20;
-            this.pbcharacter.TabStop = false;
-            // 
             // lblmimichealthnum
             // 
             this.lblmimichealthnum.AutoSize = true;
@@ -308,6 +292,24 @@
             this.lblenemyhealth.TabIndex = 15;
             this.lblenemyhealth.Text = "Enemy Health:";
             // 
+            // pbroomfour
+            // 
+            this.pbroomfour.ErrorImage = null;
+            this.pbroomfour.Image = global::RPGgameproject.Properties.Resources.mimic_room;
+            this.pbroomfour.Location = new System.Drawing.Point(249, 12);
+            this.pbroomfour.Name = "pbroomfour";
+            this.pbroomfour.Size = new System.Drawing.Size(522, 208);
+            this.pbroomfour.TabIndex = 26;
+            this.pbroomfour.TabStop = false;
+            // 
+            // pbcharacter
+            // 
+            this.pbcharacter.Location = new System.Drawing.Point(4, 12);
+            this.pbcharacter.Name = "pbcharacter";
+            this.pbcharacter.Size = new System.Drawing.Size(219, 208);
+            this.pbcharacter.TabIndex = 20;
+            this.pbcharacter.TabStop = false;
+            // 
             // Room4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,11 +327,11 @@
             this.Name = "Room4";
             this.Text = "Room4";
             this.Load += new System.EventHandler(this.Room4_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbroomfour)).EndInit();
             this.gbactions.ResumeLayout(false);
             this.gbactions.PerformLayout();
             this.gbstatistics.ResumeLayout(false);
             this.gbstatistics.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbroomfour)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbcharacter)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

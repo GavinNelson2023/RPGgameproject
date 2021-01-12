@@ -77,6 +77,7 @@ namespace RPGgameproject
                         {
                             Thread.Sleep(750);
                             lblresults.Text = "You have killed the mimic. You find a gold key on it's dead body.";
+                            lblact2.Text = "";
                             door = true;
                         }
                     }
@@ -89,6 +90,7 @@ namespace RPGgameproject
                         {
                             Thread.Sleep(750);
                             lblresults.Text = "You have killed the mimic. You find a gold key on it's dead body.";
+                            lblact2.Text = "";
                             door = true;
                         }
                     }
@@ -102,6 +104,7 @@ namespace RPGgameproject
                     {
                         Thread.Sleep(750);
                         lblresults.Text = "You have killed the mimic. You find a gold key on it's dead body.";
+                        lblact2.Text = "";
                         door = true;
                     }
                 }
@@ -126,6 +129,7 @@ namespace RPGgameproject
                     {
                         Thread.Sleep(750);
                         lblresults.Text = "You have killed the mimic. You find a gold key on it's dead body.";
+                        lblact2.Text = "";
                         door = true;
                     }
                     lblact4.Text = "4. Heal";
@@ -139,6 +143,7 @@ namespace RPGgameproject
                     {
                         Thread.Sleep(750);
                         lblresults.Text = "You have killed the mimic. You find a gold key on it's dead body.";
+                        lblact2.Text = "";
                         door = true;
                     }
                 }
