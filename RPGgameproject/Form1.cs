@@ -19,7 +19,7 @@ namespace RPGgameproject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            pbentrance.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void lblstart_Click(object sender, EventArgs e)
@@ -28,5 +28,6 @@ namespace RPGgameproject
             n.Show();
             this.Hide();
         }
+
     }
 }
